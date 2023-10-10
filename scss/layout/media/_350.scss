@@ -1,0 +1,207 @@
+//Menu hamburguesa
+@media(min-width:350px) and (max-width: 768px){
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    nav .navBar{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0px;
+    }
+    .navBar li{
+        background-color:#e5e5e5;
+    }   
+    .navBar li a{
+        color: black;
+    }
+    nav label{
+        display: flex;
+        color: white;
+        cursor: pointer;
+    }
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+}
+/* Iphone SE 375 X 667 */
+@media only screen and (min-width: 350px) and (max-width:570px){
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .navBar li{
+        width: 41px;
+        height: 20px;
+    }
+    .navBar li a{
+        font-size: 20px;
+    }
+    .conteinerUno{
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteinerUno img{
+        display: none;
+    }
+    .imgtext h2{
+        font-size: 25px;
+    }
+    .imgtext p{
+        font-size: 15px;
+    }
+    .conteinerDos{
+        width: 100%;
+        height: 170px;
+    }
+    .text{
+        width: 380px;
+        height: 150px;
+    }
+    .text h2{
+        font-size: 15px;
+    }
+    .text p{
+        font-size: 10px;
+    }
+    .buttoms{
+        margin-left: 10px;
+    }
+    .buttoms button{
+        width: 100px;
+        height: 35px;
+    }
+    .buttoms a{
+        font-size: 10px;
+    }
+    .imgtextDos img{
+        display: none;
+    }
+    .textDos{
+        width: 250px;
+        height: 50px;
+    }
+    .textDos h2{
+        font-size: 20px;
+    }
+    .conteinerTres{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cards-group-uno{
+        display: flex;
+    }
+    .cards-group-dos{
+        display: flex;
+    }
+    .card{
+        width: 200px;
+        height: 100px;
+        margin: 50px 0; 
+    }
+    .card h2{
+        font-size: 10px;
+    }
+    .card p{
+        display: none;
+    }
+    .conteinerCuatro{
+        display: flex;
+        margin-top: 150px;
+        height: 100px;
+        background-image: url(../assets/imagen/Back.jpg);
+    }
+    .r-1{
+        margin-left: 100px;
+        margin-bottom: 3px;
+    }
+    .conteinerCuatro h2{
+        margin-right: 80px;
+        font-size: 15px;
+    }
+    .conteinerCinco img{
+        display: none;
+    }
+    .textCinco h2{
+        margin-left: 30px;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+    .textCinco p{
+        font-size: 10px;
+        margin-left: 30px;
+    }
+    .new-section{
+        display: none;
+    }
+    footer{
+        height: 150px;
+    }
+    .access ul{
+        gap: 10px
+    }
+    .access li:first-child{
+        display: none;
+    }
+    .access li{
+        width: 70px;
+        height: 30px;
+    }
+    .access li a{
+        font-size: 10px;
+    }
+    .socialMedia img{
+        width: 25px;
+        height: 23px;
+    }
+    .img-logo{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        margin-bottom: 10px;
+    }
+    .img-logo img{
+        width: 35px;
+        height: 40px;
+    }
+    /* Blog*/
+    .container-blog{
+        height: 700px;
+    }
+    .card-size-blog{
+        width: 80px;
+        height: 10px;
+    }
+    .quincena1 {
+        grid-column: 2/6;
+    }
+    .quincena3{
+        grid-column: 2/6;
+    }
+    .quincena5{
+        grid-column: 2/6;
+    }
+    .move-1{
+        grid-row: 5/6;
+    }
+    .move-2{
+        grid-row: 8/9;
+    }
+
+    .card-size-blog img{
+        width: 100%;
+        height: 100px;
+    }
+    .image{
+        display: none;
+    }
+    .h2-quin{
+        font-size: 20px;
+        height: 20px;
+    }
+    }

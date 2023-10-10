@@ -1,0 +1,136 @@
+.conteiner-catalogo{
+    width: 100%;
+    height: 2000px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    gap: 20px;
+}
+.h1-conteiner-dimension{
+    grid-row: 1/2;
+    grid-column: 5/10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1-conteiner-dimension h1{
+    background-color: #148C3E;
+    color: white;
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+}
+.quincena1{
+    grid-row: 2/3;
+    grid-column: 6/8;
+    height: 300px;
+}
+.img-quni{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.h2-quin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #148C3E;
+    border-radius: 20px;
+    height: 40px;
+}
+.a-style{
+    color: white;
+    text-decoration: none;
+    font-family: 'Preahvihear', sans-serif ;
+}
+.quincena2{
+    grid-row: 2/3;
+    grid-column: 9/11;
+    height: 300px;
+}
+.quincena2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.quincena3{
+    grid-row: 4/5;
+    grid-column: 6/8;
+    height: 300px;
+}
+.quincena3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.quincena4{
+    grid-row: 4/5;
+    grid-column: 9/11;
+    height: 300px;
+}
+.quincena4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.quincena5{
+    grid-row: 6/7;
+    grid-column: 6/8;
+    height: 300px;
+}
+.quincena5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.quincena6{
+    grid-row: 6/7;
+    grid-column: 9/11;
+    height: 300px;
+}
+.quincena6 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.image{
+    grid-column: 2/6;
+    grid-row: 2/4;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.note{
+    background-color: #F24C27;
+    height: 200px;
+    grid-row: 4/5;
+    grid-column: 2/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.note p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+
+}
+.list{
+    grid-column: 6/11;
+    grid-row: 8/11;
+}
+.list img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}

@@ -1,0 +1,159 @@
+/* Ipad mini 768 x1024 */
+@media only screen and (min-width: 570px) and (max-width:1300px){
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .navBar li{
+        width: 92px;
+        height: 30px;
+    }
+    .navBar li a{
+        font-size: 15px;
+    }
+    .conteinerUno{
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteinerUno img{
+        display: none;
+    }
+    .imgtext h2{
+        font-size: 30px;
+    }
+    .imgtext p{
+        font-size: 25px;
+    }
+    .conteinerDos{
+        height: 170px;
+    }
+    .text{
+        width: 350px;
+        height: 150px;
+    }
+    .text h2{
+        font-size: 20px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .buttoms button{
+        width: 150px;
+        height: 35px;
+    }
+    .buttoms a{
+        font-size: 15px;
+    }
+    .imgtextDos{
+        height: 300px;
+    }
+    .imgtextDos img{
+        margin-top: 20px;
+        width: 500px;
+        height: 400px;
+    }
+    .textDos{
+        width: 250px;
+        height: 50px;
+    }
+    .textDos h2{
+        font-size: 20px;
+    }
+    .conteinerTres{
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+    }
+    .cards-group-uno{
+        display: flex;
+    }
+    .cards-group-dos{
+        display: flex;
+    }
+    .card{
+        height: 100px;
+        margin: 50px 0; 
+    }
+    .card h2{
+        font-size: 10px;
+    }
+    .card p{
+        display: none;
+    }
+    .conteinerCuatro{
+        display: flex;
+        margin-top: 150px;
+        height: 100px;
+        background-image: url(../assets/imagen/Back.jpg);
+    }
+    .r-1{
+        margin-left: 100px;
+        margin-bottom: 3px;
+    }
+    .conteinerCuatro h2{
+        margin-right: 50px;
+        font-size: 20px;
+    }
+    .conteinerCinco img{
+        display: none;
+    }
+    .textCinco h2{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .textCinco p{
+        font-size: 15px;
+    }
+    footer{
+        height: 150px;
+    }
+    .access ul{
+        gap: 10px
+    }
+    .access li{
+        width: 120px;
+        height: 40px;
+    }
+    .access  li a{
+        font-size: 15px;
+    }
+    .socialMedia img{
+        width: 43px;
+        height: 41px;
+    }
+    .img-logo img{
+        width: 76px;
+        height: 86px;
+    }
+    /* Blog*/
+    .container-blog{
+        height: 800px;
+    }
+    .card-size-blog{
+        width: 100px;
+        height: 10px;
+    }
+    .card-size-blog img{
+        width: 100%;
+        height: 100px;
+    }
+    .image{
+        grid-row: 3/7;
+        grid-column: 1/5;
+        margin-left: 20px;
+    }
+    .h2-quin{
+        font-size: 20px;
+        height: 20px;
+    }
+    .move-1{
+        grid-row: 6/7;
+    }
+    .move-2{
+        grid-row: 9/10;
+    }
+}
