@@ -161,34 +161,38 @@
     }
     footer{
         height: 150px;
-    }
-    .access ul{
-        gap: 10px
-    }
-    .access li:first-child{
-        display: none;
-    }
-    .access li{
-        width: 70px;
-        height: 30px;
-    }
-    .access li a{
-        font-size: 10px;
-    }
-    .socialMedia img{
-        width: 25px;
-        height: 23px;
-    }
-    .img-logo{
-        display: flex;
-        flex-direction: column;
-        align-self: flex-end;
-        margin-bottom: 10px;
-    }
-    .img-logo img{
-        width: 35px;
-        height: 40px;
-    }
+        .access {
+            ul{
+                gap: 10px;
+                li{
+                    width: 70px;
+                    height: 30px;
+                    &:first-child{
+                        display: none;
+                    }
+                    a{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .socialMedia {
+            img{
+                width: 25px;
+                height: 23px;
+            }
+        }
+        .img-logo{
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+            margin-bottom: 10px;
+            img{
+                width: 35px;
+                height: 40px;
+            }
+        }
+    } 
     /* Blog*/
     .container-blog{
         height: 700px;

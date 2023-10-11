@@ -18,26 +18,22 @@ footer {
   padding: 0px 20px;
   background-color: #e5e5e5;
 }
-
-.socialMedia {
+footer .socialMedia {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
   margin-bottom: 10px;
 }
-
-.socialMedia img {
+footer .socialMedia img {
   width: 43px;
   height: 41px;
 }
-
-.access ul {
+footer .access ul {
   display: flex;
   gap: 200px;
   list-style: none;
 }
-
-.access li {
+footer .access ul li {
   background-color: #f24c27;
   width: 254px;
   height: 37px;
@@ -46,21 +42,18 @@ footer {
   align-items: center;
   border-radius: 20px;
 }
-
-.access ul a {
+footer .access ul li a {
   color: white;
   text-decoration: none;
   font-size: 20px;
 }
-
-.img-logo {
+footer .img-logo {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
   margin-bottom: 50px;
 }
-
-.img-logo img {
+footer .img-logo img {
   width: 76px;
   height: 86px;
 }
@@ -1055,30 +1048,30 @@ input[type=email] {
   footer {
     height: 150px;
   }
-  .access ul {
+  footer .access ul {
     gap: 10px;
   }
-  .access li:first-child {
-    display: none;
-  }
-  .access li {
+  footer .access ul li {
     width: 70px;
     height: 30px;
   }
-  .access li a {
+  footer .access ul li:first-child {
+    display: none;
+  }
+  footer .access ul li a {
     font-size: 10px;
   }
-  .socialMedia img {
+  footer .socialMedia img {
     width: 25px;
     height: 23px;
   }
-  .img-logo {
+  footer .img-logo {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
     margin-bottom: 10px;
   }
-  .img-logo img {
+  footer .img-logo img {
     width: 35px;
     height: 40px;
   }
@@ -1224,21 +1217,21 @@ input[type=email] {
   footer {
     height: 150px;
   }
-  .access ul {
+  footer .access ul {
     gap: 10px;
   }
-  .access li {
+  footer .access ul li {
     width: 120px;
     height: 40px;
   }
-  .access li a {
+  footer .access ul li a {
     font-size: 15px;
   }
-  .socialMedia img {
+  footer .socialMedia img {
     width: 43px;
     height: 41px;
   }
-  .img-logo img {
+  footer .img-logo img {
     width: 76px;
     height: 86px;
   }
