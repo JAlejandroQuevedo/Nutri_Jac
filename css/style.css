@@ -123,35 +123,29 @@ header .nav-wrapper nav .navBar li a {
   width: 100%;
   height: 500px;
   padding: 0px 20px;
-  /* background-color: aqua; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.imgtext {
+.conteinerUno .img img {
+  width: 436px;
+  height: 428px;
+  margin-top: 45px;
+}
+.conteinerUno .imgtext {
   width: 800px;
   height: 119px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* margin-right: 50px; */
 }
-
-.img img {
-  width: 436px;
-  height: 428px;
-  margin-top: 45px;
-}
-
-.imgtext h2 {
+.conteinerUno .imgtext h2 {
   font-family: "Preahvihear", sans-serif;
   font-size: 35px;
   text-align: center;
   margin-bottom: 40px;
 }
-
-.imgtext p {
+.conteinerUno .imgtext p {
   text-align: center;
   font-size: 30px;
 }
@@ -988,13 +982,13 @@ input[type=email] {
     justify-content: center;
     align-items: center;
   }
-  .conteinerUno img {
+  .conteinerUno .img img {
     display: none;
   }
-  .imgtext h2 {
+  .conteinerUno .imgtext h2 {
     font-size: 25px;
   }
-  .imgtext p {
+  .conteinerUno .imgtext p {
     font-size: 15px;
   }
   .conteinerDos {

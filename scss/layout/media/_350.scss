@@ -24,10 +24,10 @@
                             a{
                                 color: black;
                             }
-                        }  
+                        } 
                     }
                 }
-            } 
+            }
         }
     }
 }
@@ -37,28 +37,32 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    }
-    .navBar li{
-        width: 41px;
-        height: 20px;
-    }
-    .navBar li a{
-        font-size: 20px;
+        li{
+            width: 41px;
+            height: 20px;
+            a{
+                font-size: 20px;
+            }
+        }
     }
     .conteinerUno{
         height: 250px;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .conteinerUno img{
-        display: none;
-    }
-    .imgtext h2{
-        font-size: 25px;
-    }
-    .imgtext p{
-        font-size: 15px;
+        .img{
+            img{
+                display: none;
+            }
+        }
+        .imgtext{
+            h2{
+                font-size: 25px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
     }
     .conteinerDos{
         width: 100%;
