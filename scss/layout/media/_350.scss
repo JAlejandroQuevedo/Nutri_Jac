@@ -138,26 +138,24 @@
             }
         }
     }
-
     .conteinerCinco{
         .imgCinco{
             img{
                 display: none;
             }
         }
-        .textCinco {
+        .textCinco{
             h2{
-                font-size: 15px;
-                margin-right: 80px;
-                margin-bottom: 30px;
                 margin-left: 30px;
+                margin-bottom: 30px;
+                font-size: 15px;
             }
             p{
                 font-size: 10px;
                 margin-left: 30px;
             }
         }
-    }  
+    } 
     .new-section{
         display: none;
     }
