@@ -1,60 +1,36 @@
 .form-textarea{
     height: 1200px;
-}
-.textarea-1{
-    height: 500px;
-}
-.textarea-1 fieldset{
-    margin-top: 50px;
-}
-.affair label{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.affair textarea{
-    width: 500px;
-    height: 150px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    font-family: 'Preahvihear', sans-serif;
-    font-size: 13px;
-    border: none;
-    background-color: #f24c27;
-    margin-bottom: 10px;
-}
-.affair textarea:hover{
-    border: 3px solid #148C3E
-}
-.textarea-1 h2{
-    display: none;
-}
-/* Text-large*/
-.section-large h1{
-    font-size: 30px;
-}
-/*Personalized */
-.personalized h1{
-    font-size: 25px;
-}
-.personalized-1{
-    height: 520px;
-}
-.personalized textarea{
-    width: 500px;
-    height: 100px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    font-family: 'Preahvihear', sans-serif;
-    font-size: 13px;
-    border: none;
-    background-color: #f24c27;
-    margin-bottom: 10px;
-}
-.personalized label{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .textarea-1{
+        height: 500px;
+        form{
+            fieldset{
+                margin-top: 50px;
+                .affair {
+                    label{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    textarea{
+                        width: 500px;
+                        height: 150px;
+                        border-radius: 10px;
+                        text-align: center;
+                        color: white;
+                        font-family: 'Preahvihear', sans-serif;
+                        font-size: 13px;
+                        border: none;
+                        background-color: #f24c27;
+                        margin-bottom: 10px;
+                        &:hover{
+                            border: 3px solid #148C3E
+                        }
+                    }
+                }
+            }
+        }
+        h2{
+            display: none;
+        }
+    }
 }
