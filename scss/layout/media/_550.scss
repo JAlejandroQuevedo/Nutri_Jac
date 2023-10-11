@@ -4,28 +4,32 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    }
-    .navBar li{
-        width: 92px;
-        height: 30px;
-    }
-    .navBar li a{
-        font-size: 15px;
+        li{
+            width: 92px;
+            height: 30px;
+            a{
+                font-size: 15px;
+            }
+        }
     }
     .conteinerUno{
         height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .conteinerUno img{
-        display: none;
-    }
-    .imgtext h2{
-        font-size: 30px;
-    }
-    .imgtext p{
+        .img{
+            img{
+                display: none;
+            }
+        }
+        .imgtext {
+            h2{
+                font-size: 30px;
+            }
+            p{
         font-size: 25px;
+    }
+        }
     }
     .conteinerDos{
         height: 170px;

@@ -161,8 +161,7 @@ header .nav-wrapper nav .navBar li a {
   justify-content: space-between;
   align-items: center;
 }
-
-.text {
+.conteinerDos .text {
   background-color: #148C3E;
   color: white;
   border-radius: 20px;
@@ -172,38 +171,33 @@ header .nav-wrapper nav .navBar li a {
   flex-direction: column;
   justify-content: center;
 }
-
-.text h2 {
+.conteinerDos .text h2 {
   font-family: "Preahvihear", sans-serif;
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
 }
-
-.text p {
+.conteinerDos .text p {
   font-family: "Preahvihear", sans-serif;
   text-align: center;
   font-size: 20px;
 }
-
-.buttoms {
+.conteinerDos .buttoms {
   display: flex;
   flex-direction: column;
 }
-
-.buttoms a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.buttoms button {
+.conteinerDos .buttoms button {
   background-color: #f24c27;
   margin-bottom: 20px;
   width: 184px;
   height: 35px;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
+}
+.conteinerDos .buttoms button a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .conteinerTres {
@@ -212,27 +206,23 @@ header .nav-wrapper nav .navBar li a {
   display: flex;
   height: 800px;
   margin-top: 50px;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
 }
-
-.imgtextDos {
+.conteinerTres .imgtextDos {
   width: 531px;
   height: 561px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.imgtextDos img {
+.conteinerTres .imgtextDos img {
   width: 531px;
   height: 454px;
   border-radius: 1.25rem;
   margin-bottom: 10px;
 }
-
-.textDos {
+.conteinerTres .textDos {
   width: 490px;
   height: 69px;
   background-color: #148C3E;
@@ -241,57 +231,10 @@ header .nav-wrapper nav .navBar li a {
   flex-direction: column;
   justify-content: center;
 }
-
-.textDos h2 {
+.conteinerTres .textDos h2 {
   font-family: "Preahvihear", sans-serif;
   text-align: center;
   color: white;
-}
-
-.card {
-  width: 290px;
-  height: 350px;
-  /* background-color: #148C3E; */
-  padding: 0px 20px;
-  margin: 70px;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 20px;
-}
-
-.card h2 {
-  font-family: "Preahvihear", sans-serif;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 0.5px;
-  margin-bottom: 10px;
-}
-
-.card p {
-  text-align: center;
-  margin: 2px;
-}
-
-.card button {
-  background-color: #f24c27;
-  margin-bottom: 20px;
-  width: 50px;
-  height: 20px;
-  border: none;
-  border-radius: 20px;
-  margin-top: 10px;
-}
-
-.card button a {
-  color: white;
-  text-decoration: none;
-}
-
-.buttoms-2 {
-  display: flex;
-  justify-content: center;
 }
 
 .conteinerCuatro {
@@ -304,7 +247,6 @@ header .nav-wrapper nav .navBar li a {
   justify-content: center;
   align-items: center;
 }
-
 .conteinerCuatro a {
   font-family: "Preahvihear", sans-serif;
   color: white;
@@ -318,12 +260,10 @@ header .nav-wrapper nav .navBar li a {
   align-items: center;
   padding: 0px 20px;
 }
-
-.imgCinco {
+.conteinerCinco .imgCinco {
   margin: 20px 20px 20px 20px;
 }
-
-.textCinco {
+.conteinerCinco .textCinco {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,28 +272,15 @@ header .nav-wrapper nav .navBar li a {
   height: 224px;
   margin-right: 100px;
 }
-
-.textCinco h2 {
+.conteinerCinco .textCinco h2 {
   font-size: "Preahvihear", sans-serif;
   font-size: 30px;
   text-align: center;
   margin-bottom: 50px;
 }
-
-.textCinco p {
+.conteinerCinco .textCinco p {
   font-size: 20px;
   text-align: center;
-}
-
-.whatsappfixed {
-  width: 50px;
-  position: fixed;
-  right: 4px;
-  bottom: 0;
-}
-
-.whatsappfixed img {
-  width: 100%;
 }
 
 .conteiner-catalogo {
@@ -936,6 +863,55 @@ input[type=email] {
   text-decoration: none;
 }
 
+.card {
+  width: 290px;
+  height: 350px;
+  padding: 0px 20px;
+  margin: 70px;
+}
+.card img {
+  width: 100%;
+  border-radius: 20px;
+}
+.card h2 {
+  font-family: "Preahvihear", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0.5px;
+  margin-bottom: 10px;
+}
+.card p {
+  text-align: center;
+  margin: 2px;
+}
+.card button {
+  background-color: #f24c27;
+  margin-bottom: 20px;
+  width: 50px;
+  height: 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.card button a {
+  color: white;
+  text-decoration: none;
+}
+.card .buttoms-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.whatsappfixed {
+  width: 50px;
+  position: fixed;
+  right: 4px;
+  bottom: 0;
+}
+.whatsappfixed img {
+  width: 100%;
+}
+
 @media (min-width: 350px) and (max-width: 768px) {
   header .nav-wrapper nav #toggle:checked ~ .menu {
     height: 100%;
@@ -1161,16 +1137,19 @@ input[type=email] {
     align-items: center;
     justify-content: center;
   }
-  .conteinerUno img {
+  .conteinerUno .img img {
     display: none;
   }
-  .imgtext h2 {
+  .conteinerUno .imgtext h2 {
     font-size: 30px;
   }
-  .imgtext p {
+  .conteinerUno .imgtext p {
     font-size: 25px;
   }
   .conteinerDos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 170px;
   }
   .text {
