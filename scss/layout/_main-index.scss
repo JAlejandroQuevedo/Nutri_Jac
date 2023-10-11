@@ -5,13 +5,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .img{
-        img{
-            width: 436px;
-            height: 428px;
-            margin-top: 45px;
-        }
-    } 
     .imgtext{
         width: 800px;
         height: 119px;
@@ -29,8 +22,14 @@
             font-size: 30px;
         }
     }
+    .img {
+        img{
+            width: 436px;
+            height: 428px;
+            margin-top: 45px;
+        }
+    }
 }
-
 .conteinerDos{
     width: 100%;
     height: 268px;
@@ -71,14 +70,14 @@
             width: 184px;
             height: 35px;
             border: none;
-            border-radius: 15px;
+            border-radius: 20px;
             a{
                 color: white;
                 text-decoration: none;
                 font-size: 20px;
             }
+        }
     }
-}
 }
 .conteinerTres{
     width: 100%;

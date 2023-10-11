@@ -127,11 +127,6 @@ header .nav-wrapper nav .navBar li a {
   justify-content: space-between;
   align-items: center;
 }
-.conteinerUno .img img {
-  width: 436px;
-  height: 428px;
-  margin-top: 45px;
-}
 .conteinerUno .imgtext {
   width: 800px;
   height: 119px;
@@ -148,6 +143,11 @@ header .nav-wrapper nav .navBar li a {
 .conteinerUno .imgtext p {
   text-align: center;
   font-size: 30px;
+}
+.conteinerUno .img img {
+  width: 436px;
+  height: 428px;
+  margin-top: 45px;
 }
 
 .conteinerDos {
@@ -192,7 +192,7 @@ header .nav-wrapper nav .navBar li a {
   width: 184px;
   height: 35px;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 .conteinerDos .buttoms button a {
   color: white;
@@ -971,57 +971,57 @@ input[type=email] {
     width: 100%;
     height: 170px;
   }
-  .text {
+  .conteinerDos .text {
     width: 380px;
     height: 150px;
   }
-  .text h2 {
+  .conteinerDos .text h2 {
     font-size: 15px;
   }
-  .text p {
+  .conteinerDos .text p {
     font-size: 10px;
   }
-  .buttoms {
+  .conteinerDos .buttoms {
     margin-left: 10px;
   }
-  .buttoms button {
+  .conteinerDos .buttoms button {
     width: 100px;
     height: 35px;
   }
-  .buttoms a {
+  .conteinerDos .buttoms button a {
     font-size: 10px;
-  }
-  .imgtextDos img {
-    display: none;
-  }
-  .textDos {
-    width: 250px;
-    height: 50px;
-  }
-  .textDos h2 {
-    font-size: 20px;
   }
   .conteinerTres {
     height: 350px;
     display: flex;
     flex-direction: column;
   }
-  .cards-group-uno {
-    display: flex;
+  .conteinerTres .imgtextDos img {
+    display: none;
   }
-  .cards-group-dos {
-    display: flex;
+  .conteinerTres .textDos {
+    width: 250px;
+    height: 50px;
   }
-  .card {
+  .conteinerTres .textDos h2 {
+    font-size: 20px;
+  }
+  .conteinerTres .card {
     width: 200px;
     height: 100px;
     margin: 50px 0;
   }
-  .card h2 {
+  .conteinerTres .card h2 {
     font-size: 10px;
   }
-  .card p {
+  .conteinerTres .card p {
     display: none;
+  }
+  .conteinerTres .cards-group-uno {
+    display: flex;
+  }
+  .conteinerTres .cards-group-dos {
+    display: flex;
   }
   .conteinerCuatro {
     display: flex;
@@ -1029,23 +1029,20 @@ input[type=email] {
     height: 100px;
     background-image: url(../assets/imagen/Back.jpg);
   }
-  .r-1 {
+  .conteinerCuatro .r-1 {
     margin-left: 100px;
     margin-bottom: 3px;
   }
-  .conteinerCuatro h2 {
-    margin-right: 80px;
-    font-size: 15px;
-  }
-  .conteinerCinco img {
+  .conteinerCinco .imgCinco img {
     display: none;
   }
-  .textCinco h2 {
-    margin-left: 30px;
-    margin-bottom: 30px;
+  .conteinerCinco .textCinco h2 {
     font-size: 15px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    margin-left: 30px;
   }
-  .textCinco p {
+  .conteinerCinco .textCinco p {
     font-size: 10px;
     margin-left: 30px;
   }
@@ -1147,63 +1144,60 @@ input[type=email] {
     font-size: 25px;
   }
   .conteinerDos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 170px;
   }
-  .text {
+  .conteinerDos .text {
     width: 350px;
     height: 150px;
   }
-  .text h2 {
+  .conteinerDos .text h2 {
     font-size: 20px;
   }
-  .text p {
+  .conteinerDos .text p {
     font-size: 15px;
   }
-  .buttoms button {
+  .conteinerDos .buttoms button {
     width: 150px;
     height: 35px;
   }
-  .buttoms a {
+  .conteinerDos .buttoms button a {
     font-size: 15px;
-  }
-  .imgtextDos {
-    height: 300px;
-  }
-  .imgtextDos img {
-    margin-top: 20px;
-    width: 500px;
-    height: 400px;
-  }
-  .textDos {
-    width: 250px;
-    height: 50px;
-  }
-  .textDos h2 {
-    font-size: 20px;
   }
   .conteinerTres {
     display: flex;
     flex-direction: column;
     height: 900px;
   }
-  .cards-group-uno {
-    display: flex;
+  .conteinerTres .imgtextDos {
+    height: 300px;
   }
-  .cards-group-dos {
-    display: flex;
+  .conteinerTres .imgtextDos img {
+    margin-top: 20px;
+    width: 500px;
+    height: 400px;
   }
-  .card {
+  .conteinerTres .textDos {
+    width: 250px;
+    height: 50px;
+  }
+  .conteinerTres .textDos h2 {
+    font-size: 20px;
+  }
+  .conteinerTres .card {
     height: 100px;
     margin: 50px 0;
   }
-  .card h2 {
+  .conteinerTres .card h2 {
     font-size: 10px;
   }
-  .card p {
+  .conteinerTres .card p {
     display: none;
+  }
+  .conteinerTres .cards-group-uno {
+    display: flex;
+  }
+  .conteinerTres .cards-group-dos {
+    display: flex;
   }
   .conteinerCuatro {
     display: flex;
@@ -1211,24 +1205,18 @@ input[type=email] {
     height: 100px;
     background-image: url(../assets/imagen/Back.jpg);
   }
-  .r-1 {
+  .conteinerCuatro .r-1 {
     margin-left: 100px;
     margin-bottom: 3px;
   }
-  .conteinerCuatro h2 {
-    margin-right: 50px;
-    font-size: 20px;
-  }
-  .conteinerCinco img {
-    display: none;
-  }
-  .textCinco h2 {
+  .conteinerCuatro .textCinco h2 {
     margin-top: 10px;
+    margin-right: 50px;
     margin-bottom: 30px;
     font-size: 20px;
   }
-  .textCinco p {
-    font-size: 15px;
+  .conteinerCuatro .imgCinco img {
+    display: none;
   }
   footer {
     height: 150px;

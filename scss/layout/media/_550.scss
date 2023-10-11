@@ -33,84 +33,84 @@
     }
     .conteinerDos{
         height: 170px;
-    }
-    .text{
-        width: 350px;
-        height: 150px;
-    }
-    .text h2{
-        font-size: 20px;
-    }
-    .text p{
-        font-size: 15px;
-    }
-    .buttoms button{
-        width: 150px;
-        height: 35px;
-    }
-    .buttoms a{
-        font-size: 15px;
-    }
-    .imgtextDos{
-        height: 300px;
-    }
-    .imgtextDos img{
-        margin-top: 20px;
-        width: 500px;
-        height: 400px;
-    }
-    .textDos{
-        width: 250px;
-        height: 50px;
-    }
-    .textDos h2{
-        font-size: 20px;
+        .text{
+            width: 350px;
+            height: 150px;
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .buttoms {
+            button{
+                width: 150px;
+                height: 35px;
+                a{
+                    font-size: 15px;
+                }
+            }
+        }
     }
     .conteinerTres{
         display: flex;
         flex-direction: column;
         height: 900px;
-    }
-    .cards-group-uno{
-        display: flex;
-    }
-    .cards-group-dos{
-        display: flex;
-    }
-    .card{
-        height: 100px;
-        margin: 50px 0; 
-    }
-    .card h2{
-        font-size: 10px;
-    }
-    .card p{
-        display: none;
+        .imgtextDos{
+            height: 300px;
+            img{
+                margin-top: 20px;
+                width: 500px;
+                height: 400px;
+            }
+        }
+        .textDos{
+            width: 250px;
+            height: 50px;
+            h2{
+                font-size: 20px;
+            }
+        }
+        .card{
+            height: 100px;
+            margin: 50px 0; 
+            h2{
+                font-size: 10px;
+            }
+            p{
+                display: none;
+            }
+        }
+        .cards-group-uno{
+            display: flex;
+        }
+        .cards-group-dos{
+            display: flex;
+        }
     }
     .conteinerCuatro{
         display: flex;
         margin-top: 150px;
         height: 100px;
         background-image: url(../assets/imagen/Back.jpg);
-    }
-    .r-1{
-        margin-left: 100px;
-        margin-bottom: 3px;
-    }
-    .conteinerCuatro h2{
-        margin-right: 50px;
-        font-size: 20px;
-    }
-    .conteinerCinco img{
-        display: none;
-    }
-    .textCinco h2{
-        margin-top: 10px;
-        margin-bottom: 30px;
-        font-size: 20px;
-    }
-    .textCinco p{
-        font-size: 15px;
+        .r-1{
+            margin-left: 100px;
+            margin-bottom: 3px;
+        }
+        .textCinco{
+            h2{
+                margin-top: 10px;
+                margin-right: 50px;
+                margin-bottom: 30px;
+                font-size: 20px;
+            }
+        } 
+        .imgCinco{
+            img{
+                display: none;
+            }
+        }
     }
     footer{
         height: 150px;
