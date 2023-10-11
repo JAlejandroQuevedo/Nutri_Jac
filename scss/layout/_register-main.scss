@@ -1,0 +1,22 @@
+.back-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    .back-log{
+        background-color: #148C3E;
+        grid-row: 12/13;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 100px;
+        align-self: center;
+        justify-content: center;
+        border-radius: 20px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

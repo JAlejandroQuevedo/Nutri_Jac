@@ -142,28 +142,28 @@
     /* Blog*/
     .container-blog{
         height: 800px;
-    }
-    .card-size-blog{
-        width: 100px;
-        height: 10px;
-    }
-    .card-size-blog img{
-        width: 100%;
-        height: 100px;
-    }
-    .image{
-        grid-row: 3/7;
-        grid-column: 1/5;
-        margin-left: 20px;
-    }
-    .h2-quin{
-        font-size: 20px;
-        height: 20px;
-    }
-    .move-1{
-        grid-row: 6/7;
-    }
-    .move-2{
-        grid-row: 9/10;
+        .card-size-blog{
+            width: 100px;
+            height: 10px;
+            img{
+                width: 100%;
+                height: 100px;
+            }
+            .h2-quin{
+                font-size: 20px;
+                height: 20px;
+            }
+        }
+        .image{
+            grid-row: 3/7;
+            grid-column: 1/5;
+            margin-left: 20px;
+        }
+        .move-1{
+            grid-row: 6/7;
+        }
+        .move-2{
+            grid-row: 9/10;
+        }
     }
 }
