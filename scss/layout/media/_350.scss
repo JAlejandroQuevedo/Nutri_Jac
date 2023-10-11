@@ -1,28 +1,34 @@
 //Menu hamburguesa
 @media(min-width:350px) and (max-width: 768px){
-    nav .menu{
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    nav .navBar{
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem 0px;
-    }
-    .navBar li{
-        background-color:#e5e5e5;
-    }   
-    .navBar li a{
-        color: black;
-    }
-    nav label{
-        display: flex;
-        color: white;
-        cursor: pointer;
-    }
-    nav #toggle:checked ~ .menu{
-        height: 100%;
+    header{
+        .nav-wrapper{
+            nav{
+                #toggle:checked ~ .menu{
+                    height: 100%;
+                }
+                label{
+                    display: flex;
+                    color: white;
+                    cursor: pointer;
+                }
+                .menu{
+                    width: 100%;
+                    height: 0;
+                    overflow: hidden;
+                    .navBar{
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 0.5rem 0px;
+                        li{
+                            background-color:#e5e5e5;
+                            a{
+                                color: black;
+                            }
+                        }  
+                    }
+                }
+            } 
+        }
     }
 }
 /* Iphone SE 375 X 667 */

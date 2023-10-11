@@ -77,42 +77,34 @@ header {
   top: 0;
   z-index: 4;
 }
-
-.nav-wrapper {
+header .nav-wrapper {
   width: 100%;
 }
-
-nav {
+header .nav-wrapper nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
+header .nav-wrapper nav .logo {
   width: 100px;
 }
-
-.logo img {
+header .nav-wrapper nav .logo img {
   width: 100%;
 }
-
-nav #toggle, nav label {
+header .nav-wrapper nav #toggle, header .nav-wrapper nav label {
   display: none;
 }
-
-.menu {
+header .nav-wrapper nav .menu {
   display: flex;
   justify-content: flex-end;
 }
-
-.navBar {
+header .nav-wrapper nav .navBar {
   display: flex;
   list-style: none;
   gap: 20px;
 }
-
-.navBar li {
+header .nav-wrapper nav .navBar li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,8 +113,7 @@ nav #toggle, nav label {
   height: 35px;
   border-radius: 20px;
 }
-
-.navBar li a {
+header .nav-wrapper nav .navBar li a {
   text-decoration: none;
   font-size: 20px;
   color: white;
@@ -952,29 +943,29 @@ input[type=email] {
 }
 
 @media (min-width: 350px) and (max-width: 768px) {
-  nav .menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
+  header .nav-wrapper nav #toggle:checked ~ .menu {
+    height: 100%;
   }
-  nav .navBar {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0px;
-  }
-  .navBar li {
-    background-color: #e5e5e5;
-  }
-  .navBar li a {
-    color: black;
-  }
-  nav label {
+  header .nav-wrapper nav label {
     display: flex;
     color: white;
     cursor: pointer;
   }
-  nav #toggle:checked ~ .menu {
-    height: 100%;
+  header .nav-wrapper nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  header .nav-wrapper nav .menu .navBar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0px;
+  }
+  header .nav-wrapper nav .menu .navBar li {
+    background-color: #e5e5e5;
+  }
+  header .nav-wrapper nav .menu .navBar li a {
+    color: black;
   }
 }
 /* Iphone SE 375 X 667 */
