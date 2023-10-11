@@ -1033,6 +1033,10 @@ input[type=email] {
     margin-left: 100px;
     margin-bottom: 3px;
   }
+  .conteinerCuatro .r-1 a h2 {
+    margin-right: 80px;
+    font-size: 15px;
+  }
   .conteinerCinco .imgCinco img {
     display: none;
   }
