@@ -19,9 +19,9 @@
     }
 }
 .conteinerDos{
-    @extend .conteinerUno;
-    @include size-padding (100%, 268px, 0px 20px);
-    @include background-image(url(../assets/imagen/fondoUno.jpg), cover, no-repeat);
+    @include size-padding(100%, 268px, 0px 20px);
+    @include background-image(url(../assets/imagen/fondoUno.jpg));
+    @include flex-5p(space-between, center);
     .text{
         background-color: $bg-boton-verde;
         color: $color-caja;
@@ -47,10 +47,10 @@
     }
 }
 .conteinerTres{
-    @extend .conteinerUno;
-    width: 100%;
+    @extend .conteinerDos;
     height: 800px;
     margin-top: 50px;
+    background-image: none;
     .imgtextDos{
         @include size(531px, 561px);
         @include flex-4p (column, center);
@@ -67,16 +67,18 @@
     }
 }
 .conteinerCuatro{
-    @include background-image(url(../assets/imagen/Back.jpg), cover, no-repeat);
-    @include size(100%, 167px);
-    @include flex-5p(center, center);
+    @extend .conteinerDos;
+    background-image: url(../assets/imagen/Back.jpg);
+    height: 167px;
+    justify-content: center;
     a{
         @include ancla($color-caja, none, 20px);
         font-family: $encabezado-frase;
     }
 }
 .conteinerCinco{
-    @extend .conteinerUno;
+    @include flex-5p(space-between, center);
+    padding: 0px 20px;
     .imgCinco{
         margin: 20px 20px 20px 20px;
     }

@@ -137,7 +137,7 @@ header .nav-wrapper nav .navBar li a {
   color: #FFFFFF;
 }
 
-.conteinerUno, .conteinerCinco, .conteinerTres, .conteinerDos {
+.conteinerUno {
   display: flex;
   flex-direction: none;
   flex-wrap: none;
@@ -148,7 +148,7 @@ header .nav-wrapper nav .navBar li a {
   height: 500px;
   padding: 0px 20px;
 }
-.conteinerUno .imgtext, .conteinerCinco .imgtext, .conteinerTres .imgtext, .conteinerDos .imgtext {
+.conteinerUno .imgtext {
   width: 800px;
   height: 119px;
   display: flex;
@@ -158,32 +158,35 @@ header .nav-wrapper nav .navBar li a {
   align-items: none;
   gap: none;
 }
-.conteinerUno .imgtext h2, .conteinerCinco .imgtext h2, .conteinerTres .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerCinco .imgtext .conteinerDos .text p, .conteinerTres .imgtext .conteinerDos .text p, .conteinerDos .imgtext h2, .conteinerDos .imgtext .text p, .conteinerDos .text .imgtext p {
+.conteinerUno .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerUno .imgtext .conteinerCuatro .text p, .conteinerUno .imgtext .conteinerTres .text p, .conteinerDos .text .conteinerUno .imgtext p, .conteinerCuatro .text .conteinerUno .imgtext p, .conteinerTres .text .conteinerUno .imgtext p {
   font-family: "Preahvihear", sans-serif;
   font-size: 35px;
   text-align: center;
   margin: 40px;
 }
-.conteinerUno .imgtext p, .conteinerCinco .imgtext p, .conteinerTres .imgtext p, .conteinerDos .imgtext p {
+.conteinerUno .imgtext p {
   font-size: 30px;
   text-align: center;
   margin: none;
 }
-.conteinerUno .img img, .conteinerCinco .img img, .conteinerTres .img img, .conteinerDos .img img {
+.conteinerUno .img img {
   width: 436px;
   height: 428px;
   margin-top: 45px;
 }
 
-.conteinerDos {
+.conteinerDos, .conteinerCuatro, .conteinerTres {
   width: 100%;
   height: 268px;
   padding: 0px 20px;
   background-image: url(../assets/imagen/fondoUno.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.conteinerDos .text {
+.conteinerDos .text, .conteinerCuatro .text, .conteinerTres .text {
   background-color: #148C3E;
   color: #FFFFFF;
   width: 475px;
@@ -193,22 +196,22 @@ header .nav-wrapper nav .navBar li a {
   flex-direction: column;
   justify-content: center;
 }
-.conteinerDos .text h2, .conteinerDos .text p {
+.conteinerDos .text h2, .conteinerCuatro .text h2, .conteinerTres .text h2, .conteinerDos .text p, .conteinerCuatro .text p, .conteinerTres .text p {
   font-family: "Preahvihear", sans-serif;
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
 }
-.conteinerDos .text p {
+.conteinerDos .text p, .conteinerCuatro .text p, .conteinerTres .text p {
   font-size: 20px;
   margin-bottom: none;
 }
-.conteinerDos .buttoms {
+.conteinerDos .buttoms, .conteinerCuatro .buttoms, .conteinerTres .buttoms {
   display: flex;
   flex-direction: column;
   justify-content: none;
 }
-.conteinerDos .buttoms button {
+.conteinerDos .buttoms button, .conteinerCuatro .buttoms button, .conteinerTres .buttoms button {
   background-color: #F24C27;
   margin-bottom: 20px;
   width: 184px;
@@ -216,16 +219,16 @@ header .nav-wrapper nav .navBar li a {
   border: none;
   border-radius: 20px;
 }
-.conteinerDos .buttoms button a {
+.conteinerDos .buttoms button a, .conteinerCuatro .buttoms button a, .conteinerTres .buttoms button a {
   color: #FFFFFF;
   text-decoration: none;
   font-size: 20px;
 }
 
 .conteinerTres {
-  width: 100%;
   height: 800px;
   margin-top: 50px;
+  background-image: none;
 }
 .conteinerTres .imgtextDos {
   width: 531px;
@@ -251,7 +254,7 @@ header .nav-wrapper nav .navBar li a {
   flex-direction: column;
   justify-content: center;
 }
-.conteinerTres .textDos h2, .conteinerTres .textDos .conteinerDos .text p, .conteinerDos .text .conteinerTres .textDos p {
+.conteinerTres .textDos h2, .conteinerDos .text .conteinerTres .textDos p, .conteinerCuatro .text .conteinerTres .textDos p, .conteinerTres .textDos .text p, .conteinerTres .text .textDos p {
   font-family: "Preahvihear", sans-serif;
   text-align: center;
   color: #FFFFFF;
@@ -259,13 +262,8 @@ header .nav-wrapper nav .navBar li a {
 
 .conteinerCuatro {
   background-image: url(../assets/imagen/Back.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
   height: 167px;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 .conteinerCuatro a {
   color: #FFFFFF;
@@ -274,6 +272,12 @@ header .nav-wrapper nav .navBar li a {
   font-family: "Preahvihear", sans-serif;
 }
 
+.conteinerCinco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
 .conteinerCinco .imgCinco {
   margin: 20px 20px 20px 20px;
 }
@@ -288,7 +292,7 @@ header .nav-wrapper nav .navBar li a {
   height: 224px;
   margin-right: 100px;
 }
-.conteinerCinco .textCinco h2, .conteinerCinco .textCinco .conteinerDos .text p, .conteinerDos .text .conteinerCinco .textCinco p {
+.conteinerCinco .textCinco h2, .conteinerCinco .textCinco .conteinerDos .text p, .conteinerDos .text .conteinerCinco .textCinco p, .conteinerCinco .textCinco .conteinerTres .text p, .conteinerTres .text .conteinerCinco .textCinco p, .conteinerCinco .textCinco .conteinerCuatro .text p, .conteinerCuatro .text .conteinerCinco .textCinco p {
   font-family: "Preahvihear", sans-serif;
   text-align: 30px;
   font-size: center;
@@ -567,7 +571,7 @@ header .nav-wrapper nav .navBar li a {
   justify-content: center;
   align-items: center;
 }
-.general-form .section3 h2, .general-form .section3 .conteinerDos .text p, .conteinerDos .text .general-form .section3 p {
+.general-form .section3 h2, .general-form .section3 .conteinerDos .text p, .conteinerDos .text .general-form .section3 p, .general-form .section3 .conteinerTres .text p, .conteinerTres .text .general-form .section3 p, .general-form .section3 .conteinerCuatro .text p, .conteinerCuatro .text .general-form .section3 p {
   font-family: "Preahvihear", sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -651,13 +655,13 @@ header .nav-wrapper nav .navBar li a {
   justify-content: center;
   align-items: center;
 }
-.section4 h2, .section4 .conteinerDos .text p, .conteinerDos .text .section4 p {
+.section4 h2, .section4 .conteinerDos .text p, .conteinerDos .text .section4 p, .section4 .conteinerTres .text p, .conteinerTres .text .section4 p, .section4 .conteinerCuatro .text p, .conteinerCuatro .text .section4 p {
   font-size: 20px;
   text-align: center;
   text-justify: center;
   margin-bottom: 20px;
 }
-.section4 h2 p, .section4 .conteinerDos .text p p, .conteinerDos .text .section4 p p {
+.section4 h2 p, .section4 .conteinerDos .text p p, .conteinerDos .text .section4 p p, .section4 .conteinerTres .text p p, .conteinerTres .text .section4 p p, .section4 .conteinerCuatro .text p p, .conteinerCuatro .text .section4 p p {
   font-size: 16px;
   text-align: center;
   text-justify: center;
@@ -692,7 +696,7 @@ header .nav-wrapper nav .navBar li a {
 .form-textarea .textarea-1 form fieldset .affair textarea:hover {
   border: 3px solid #148C3E;
 }
-.form-textarea .textarea-1 h2, .form-textarea .textarea-1 .conteinerDos .text p, .conteinerDos .text .form-textarea .textarea-1 p {
+.form-textarea .textarea-1 h2, .form-textarea .textarea-1 .conteinerDos .text p, .conteinerDos .text .form-textarea .textarea-1 p, .form-textarea .textarea-1 .conteinerTres .text p, .conteinerTres .text .form-textarea .textarea-1 p, .form-textarea .textarea-1 .conteinerCuatro .text p, .conteinerCuatro .text .form-textarea .textarea-1 p {
   display: none;
 }
 
@@ -831,7 +835,7 @@ header .nav-wrapper nav .navBar li a {
   width: 100%;
   border-radius: 20px;
 }
-.card h2, .card .conteinerDos .text p, .conteinerDos .text .card p {
+.card h2, .card .conteinerDos .text p, .conteinerDos .text .card p, .card .conteinerTres .text p, .conteinerTres .text .card p, .card .conteinerCuatro .text p, .conteinerCuatro .text .card p {
   font-family: "Preahvihear", sans-serif;
   font-size: 20px;
   text-align: center;
@@ -934,43 +938,43 @@ header .nav-wrapper nav .navBar li a {
   .navBar li a {
     font-size: 20px;
   }
-  .conteinerUno, .conteinerDos, .conteinerTres, .conteinerCinco {
+  .conteinerUno {
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .conteinerUno .img img, .conteinerDos .img img, .conteinerTres .img img, .conteinerCinco .img img {
+  .conteinerUno .img img {
     display: none;
   }
-  .conteinerUno .imgtext h2, .conteinerDos .imgtext h2, .conteinerTres .imgtext h2, .conteinerCinco .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerDos .imgtext .text p, .conteinerDos .text .imgtext p, .conteinerTres .imgtext .conteinerDos .text p, .conteinerCinco .imgtext .conteinerDos .text p {
+  .conteinerUno .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerUno .imgtext p, .conteinerUno .imgtext .conteinerTres .text p, .conteinerTres .text .conteinerUno .imgtext p, .conteinerUno .imgtext .conteinerCuatro .text p, .conteinerCuatro .text .conteinerUno .imgtext p {
     font-size: 25px;
   }
-  .conteinerUno .imgtext p, .conteinerDos .imgtext p, .conteinerTres .imgtext p, .conteinerCinco .imgtext p {
+  .conteinerUno .imgtext p {
     font-size: 15px;
   }
-  .conteinerDos {
+  .conteinerDos, .conteinerTres, .conteinerCuatro {
     width: 100%;
     height: 170px;
   }
-  .conteinerDos .text {
+  .conteinerDos .text, .conteinerTres .text, .conteinerCuatro .text {
     width: 380px;
     height: 150px;
   }
-  .conteinerDos .text h2, .conteinerDos .text p {
+  .conteinerDos .text h2, .conteinerTres .text h2, .conteinerCuatro .text h2, .conteinerDos .text p, .conteinerTres .text p, .conteinerCuatro .text p {
     font-size: 15px;
   }
-  .conteinerDos .text p {
+  .conteinerDos .text p, .conteinerTres .text p, .conteinerCuatro .text p {
     font-size: 10px;
   }
-  .conteinerDos .buttoms {
+  .conteinerDos .buttoms, .conteinerTres .buttoms, .conteinerCuatro .buttoms {
     margin-left: 10px;
   }
-  .conteinerDos .buttoms button {
+  .conteinerDos .buttoms button, .conteinerTres .buttoms button, .conteinerCuatro .buttoms button {
     width: 100px;
     height: 35px;
   }
-  .conteinerDos .buttoms button a {
+  .conteinerDos .buttoms button a, .conteinerTres .buttoms button a, .conteinerCuatro .buttoms button a {
     font-size: 10px;
   }
   .conteinerTres {
@@ -985,7 +989,7 @@ header .nav-wrapper nav .navBar li a {
     width: 250px;
     height: 50px;
   }
-  .conteinerTres .textDos h2, .conteinerTres .textDos .conteinerDos .text p, .conteinerDos .text .conteinerTres .textDos p {
+  .conteinerTres .textDos h2, .conteinerDos .text .conteinerTres .textDos p, .conteinerTres .textDos .text p, .conteinerTres .text .textDos p, .conteinerCuatro .text .conteinerTres .textDos p {
     font-size: 20px;
   }
   .conteinerTres .card {
@@ -993,7 +997,7 @@ header .nav-wrapper nav .navBar li a {
     height: 100px;
     margin: 50px 0;
   }
-  .conteinerTres .card h2, .conteinerTres .card .conteinerDos .text p, .conteinerDos .text .conteinerTres .card p {
+  .conteinerTres .card h2, .conteinerDos .text .conteinerTres .card p, .conteinerTres .card .text p, .conteinerTres .text .card p, .conteinerCuatro .text .conteinerTres .card p {
     font-size: 10px;
   }
   .conteinerTres .card p {
@@ -1015,14 +1019,14 @@ header .nav-wrapper nav .navBar li a {
     margin-left: 100px;
     margin-bottom: 3px;
   }
-  .conteinerCuatro .r-1 a h2, .conteinerCuatro .r-1 a .conteinerDos .text p, .conteinerDos .text .conteinerCuatro .r-1 a p {
+  .conteinerCuatro .r-1 a h2, .conteinerDos .text .conteinerCuatro .r-1 a p, .conteinerTres .text .conteinerCuatro .r-1 a p, .conteinerCuatro .r-1 a .text p, .conteinerCuatro .text .r-1 a p {
     margin-right: 80px;
     font-size: 15px;
   }
   .conteinerCinco .imgCinco img {
     display: none;
   }
-  .conteinerCinco .textCinco h2, .conteinerCinco .textCinco .conteinerDos .text p, .conteinerDos .text .conteinerCinco .textCinco p {
+  .conteinerCinco .textCinco h2, .conteinerCinco .textCinco .conteinerDos .text p, .conteinerDos .text .conteinerCinco .textCinco p, .conteinerCinco .textCinco .conteinerTres .text p, .conteinerTres .text .conteinerCinco .textCinco p, .conteinerCinco .textCinco .conteinerCuatro .text p, .conteinerCuatro .text .conteinerCinco .textCinco p {
     margin-left: 30px;
     margin-bottom: 30px;
     font-size: 15px;
@@ -1113,39 +1117,39 @@ header .nav-wrapper nav .navBar li a {
   .navBar li a {
     font-size: 15px;
   }
-  .conteinerUno, .conteinerDos, .conteinerTres, .conteinerCinco {
+  .conteinerUno {
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .conteinerUno .img img, .conteinerDos .img img, .conteinerTres .img img, .conteinerCinco .img img {
+  .conteinerUno .img img {
     display: none;
   }
-  .conteinerUno .imgtext h2, .conteinerDos .imgtext h2, .conteinerTres .imgtext h2, .conteinerCinco .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerDos .imgtext .text p, .conteinerDos .text .imgtext p, .conteinerTres .imgtext .conteinerDos .text p, .conteinerCinco .imgtext .conteinerDos .text p {
+  .conteinerUno .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerUno .imgtext p, .conteinerUno .imgtext .conteinerTres .text p, .conteinerTres .text .conteinerUno .imgtext p, .conteinerUno .imgtext .conteinerCuatro .text p, .conteinerCuatro .text .conteinerUno .imgtext p {
     font-size: 30px;
   }
-  .conteinerUno .imgtext p, .conteinerDos .imgtext p, .conteinerTres .imgtext p, .conteinerCinco .imgtext p {
+  .conteinerUno .imgtext p {
     font-size: 25px;
   }
-  .conteinerDos {
+  .conteinerDos, .conteinerTres, .conteinerCuatro {
     height: 170px;
   }
-  .conteinerDos .text {
+  .conteinerDos .text, .conteinerTres .text, .conteinerCuatro .text {
     width: 350px;
     height: 150px;
   }
-  .conteinerDos .text h2, .conteinerDos .text p {
+  .conteinerDos .text h2, .conteinerTres .text h2, .conteinerCuatro .text h2, .conteinerDos .text p, .conteinerTres .text p, .conteinerCuatro .text p {
     font-size: 20px;
   }
-  .conteinerDos .text p {
+  .conteinerDos .text p, .conteinerTres .text p, .conteinerCuatro .text p {
     font-size: 15px;
   }
-  .conteinerDos .buttoms button {
+  .conteinerDos .buttoms button, .conteinerTres .buttoms button, .conteinerCuatro .buttoms button {
     width: 150px;
     height: 35px;
   }
-  .conteinerDos .buttoms button a {
+  .conteinerDos .buttoms button a, .conteinerTres .buttoms button a, .conteinerCuatro .buttoms button a {
     font-size: 15px;
   }
   .conteinerTres {
@@ -1165,14 +1169,14 @@ header .nav-wrapper nav .navBar li a {
     width: 250px;
     height: 50px;
   }
-  .conteinerTres .textDos h2, .conteinerTres .textDos .conteinerDos .text p, .conteinerDos .text .conteinerTres .textDos p {
+  .conteinerTres .textDos h2, .conteinerDos .text .conteinerTres .textDos p, .conteinerTres .textDos .text p, .conteinerTres .text .textDos p, .conteinerCuatro .text .conteinerTres .textDos p {
     font-size: 20px;
   }
   .conteinerTres .card {
     height: 100px;
     margin: 50px 0;
   }
-  .conteinerTres .card h2, .conteinerTres .card .conteinerDos .text p, .conteinerDos .text .conteinerTres .card p {
+  .conteinerTres .card h2, .conteinerDos .text .conteinerTres .card p, .conteinerTres .card .text p, .conteinerTres .text .card p, .conteinerCuatro .text .conteinerTres .card p {
     font-size: 10px;
   }
   .conteinerTres .card p {
@@ -1194,7 +1198,7 @@ header .nav-wrapper nav .navBar li a {
     margin-left: 100px;
     margin-bottom: 3px;
   }
-  .conteinerCuatro .textCinco h2, .conteinerCuatro .textCinco .conteinerDos .text p, .conteinerDos .text .conteinerCuatro .textCinco p {
+  .conteinerCuatro .textCinco h2, .conteinerDos .text .conteinerCuatro .textCinco p, .conteinerTres .text .conteinerCuatro .textCinco p, .conteinerCuatro .textCinco .text p, .conteinerCuatro .text .textCinco p {
     margin-top: 10px;
     margin-right: 50px;
     margin-bottom: 30px;
