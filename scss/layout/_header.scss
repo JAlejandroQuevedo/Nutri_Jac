@@ -1,21 +1,12 @@
 header{
-    display: flex;
+    @include flex (row, none, space-between, center, none);
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #e5e5e5;
-    padding: 0px 20px;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 4;
+    background-color: $bg-navBar-footer;
+    @include box-4p(0px 20px, sticky, 0, 4);
     .nav-wrapper{
         width: 100%;
         nav{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
+            @include flex (none, wrap, space-between, center, none);
             .logo{
                 width: 100px;
                 img{
@@ -23,28 +14,21 @@ header{
                 }
             }
             #toggle, label{
-                display: none;
+                @include none;
             }
             .menu{
-                display: flex;
-                justify-content: flex-end;
+                @include flex-2p(flex-end, none);
             }
             .navBar{
-                display: flex;
+                @include flex-2p (none, 1.25rem);
                 list-style: none;
-                gap: 20px;
                 li{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: #148C3E;
-                    width: 184px;
-                    height: 35px;
-                    border-radius: 20px;
+                    @include flex (none, none, center, center, none);
+                    background-color:$bg-boton-verde;
+                    @include size-radius (184px, 35px, 20px);
                     a{
-                        text-decoration: none;
-                        font-size:20px;
-                        color: white;
+                        @include font-style-2p (20px, none);
+                        color: $color-caja;
                     }
                 }
             }

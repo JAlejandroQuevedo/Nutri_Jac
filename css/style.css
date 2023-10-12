@@ -12,60 +12,78 @@ html {
 footer {
   width: 100%;
   height: 355px;
+  border-radius: none;
   display: flex;
+  flex-direction: none;
+  flex-wrap: none;
   justify-content: space-between;
   align-items: center;
+  gap: none;
   padding: 0px 20px;
-  background-color: #e5e5e5;
+  background-color: #E5E5E5;
 }
 footer .socialMedia {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: flex-end;
+  gap: none;
   margin-bottom: 10px;
 }
 footer .socialMedia img {
   width: 43px;
   height: 41px;
+  border-radius: none;
 }
 footer .access ul {
   display: flex;
+  justify-content: none;
   gap: 200px;
   list-style: none;
 }
 footer .access ul li {
-  background-color: #f24c27;
-  width: 254px;
-  height: 37px;
   display: flex;
+  flex-direction: none;
+  flex-wrap: none;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  gap: none;
+  width: 254px;
+  height: 37px;
+  border-radius: 1.25rem;
+  background-color: #F24C27;
 }
 footer .access ul li a {
-  color: white;
-  text-decoration: none;
+  color: #FFFFFF;
   font-size: 20px;
+  text-decoration: none;
 }
 footer .img-logo {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: flex-end;
+  gap: none;
   margin-bottom: 50px;
 }
 footer .img-logo img {
   width: 76px;
   height: 86px;
+  border-radius: none;
 }
 
 header {
   display: flex;
-  width: 100%;
   flex-direction: row;
+  flex-wrap: none;
   justify-content: space-between;
-  background-color: #e5e5e5;
-  padding: 0px 20px;
   align-items: center;
+  gap: none;
+  width: 100%;
+  background-color: #E5E5E5;
+  padding: 0px 20px;
   position: sticky;
   top: 0;
   z-index: 4;
@@ -75,9 +93,11 @@ header .nav-wrapper {
 }
 header .nav-wrapper nav {
   display: flex;
+  flex-direction: none;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: none;
 }
 header .nav-wrapper nav .logo {
   width: 100px;
@@ -91,53 +111,65 @@ header .nav-wrapper nav #toggle, header .nav-wrapper nav label {
 header .nav-wrapper nav .menu {
   display: flex;
   justify-content: flex-end;
+  gap: none;
 }
 header .nav-wrapper nav .navBar {
   display: flex;
+  justify-content: none;
+  gap: 1.25rem;
   list-style: none;
-  gap: 20px;
 }
 header .nav-wrapper nav .navBar li {
   display: flex;
-  align-items: center;
+  flex-direction: none;
+  flex-wrap: none;
   justify-content: center;
+  align-items: center;
+  gap: none;
   background-color: #148C3E;
   width: 184px;
   height: 35px;
   border-radius: 20px;
 }
 header .nav-wrapper nav .navBar li a {
-  text-decoration: none;
   font-size: 20px;
-  color: white;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
-.conteinerUno {
+.conteinerUno, .conteinerDos {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
   width: 100%;
   height: 500px;
   padding: 0px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.conteinerUno .imgtext {
+.conteinerUno .imgtext, .conteinerDos .imgtext {
   width: 800px;
   height: 119px;
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
   justify-content: flex-end;
+  align-items: none;
+  gap: none;
 }
-.conteinerUno .imgtext h2 {
+.conteinerUno .imgtext h2, .conteinerDos .imgtext h2 {
   font-family: "Preahvihear", sans-serif;
   font-size: 35px;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 40px;
 }
-.conteinerUno .imgtext p {
-  text-align: center;
+.conteinerUno .imgtext p, .conteinerDos .imgtext p {
   font-size: 30px;
+  text-align: center;
+  margin: none;
 }
-.conteinerUno .img img {
+.conteinerUno .img img, .conteinerDos .img img {
   width: 436px;
   height: 428px;
   margin-top: 45px;
@@ -150,16 +182,13 @@ header .nav-wrapper nav .navBar li a {
   background-image: url(../assets/imagen/fondoUno.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .conteinerDos .text {
   background-color: #148C3E;
-  color: white;
-  border-radius: 20px;
+  color: #FFFFFF;
   width: 475px;
   height: 212px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -911,19 +940,19 @@ header .nav-wrapper nav .navBar li a {
   .navBar li a {
     font-size: 20px;
   }
-  .conteinerUno {
+  .conteinerUno, .conteinerDos {
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .conteinerUno .img img {
+  .conteinerUno .img img, .conteinerDos .img img {
     display: none;
   }
-  .conteinerUno .imgtext h2 {
+  .conteinerUno .imgtext h2, .conteinerDos .imgtext h2 {
     font-size: 25px;
   }
-  .conteinerUno .imgtext p {
+  .conteinerUno .imgtext p, .conteinerDos .imgtext p {
     font-size: 15px;
   }
   .conteinerDos {
@@ -1090,19 +1119,19 @@ header .nav-wrapper nav .navBar li a {
   .navBar li a {
     font-size: 15px;
   }
-  .conteinerUno {
+  .conteinerUno, .conteinerDos {
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .conteinerUno .img img {
+  .conteinerUno .img img, .conteinerDos .img img {
     display: none;
   }
-  .conteinerUno .imgtext h2 {
+  .conteinerUno .imgtext h2, .conteinerDos .imgtext h2 {
     font-size: 30px;
   }
-  .conteinerUno .imgtext p {
+  .conteinerUno .imgtext p, .conteinerDos .imgtext p {
     font-size: 25px;
   }
   .conteinerDos {

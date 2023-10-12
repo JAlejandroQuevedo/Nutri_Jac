@@ -1,0 +1,14 @@
+//Colores
+$bg-principal: map-get($colors, blanco-oscuro);
+$bg-navBar-footer: map-get($colors, gris-semi);
+$color-caja: map-get($colors, blanco);
+$color-general: map-get($colors, negro);
+$bg-boton-naranja: map-get($colors, naranja);
+$bg-boton-verde: map-get($colors, verde );
+$bg-caja-verde:map-get($colors, verde-oscuro);
+$bg-caja-naranja: map-get($colors, naranja-oscuro);
+
+//Tipografia
+
+$encabezado-frase: 'Preahvihear', sans-serif;
+$general-typo:  'Inika', serif;

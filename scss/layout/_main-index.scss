@@ -1,54 +1,32 @@
 .conteinerUno{
-    width: 100%;
-    height: 500px;
-    padding: 0px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(none, none, space-between, center, none);
+    @include size-padding (100%, 500px, 0px 20px);
     .imgtext{
-        width: 800px;
-        height: 119px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        @include size(800px, 119px);
+        @include flex (column, none, flex-end, none, none);
         h2{
-            font-family:'Preahvihear', sans-serif ;
-            font-size: 35px;
-            text-align: center;
-            margin-bottom: 40px;
+            font-family:$encabezado-frase;
+            @include font-style-size-margin(35px, center, 40px);
         }
         p{
-            text-align: center;
-            font-size: 30px;
+            @include font-style-size-margin(30px, center, none);
         }
     }
     .img {
         img{
-            width: 436px;
-            height: 428px;
-            margin-top: 45px;
+            @include size-margin-top(436px, 428px, 45px);
         }
     }
 }
 .conteinerDos{
-    width: 100%;
-    height: 268px;
-    padding: 0px 20px;
-    background-image: url(../assets/imagen/fondoUno.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend .conteinerUno;
+    @include size-padding (100%, 268px, 0px 20px);
+    @include background-image(url(../assets/imagen/fondoUno.jpg), cover, no-repeat);
     .text{
-        background-color: #148C3E;
-        color: white;
-        border-radius: 20px;
-        width: 475px;
-        height: 212px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        background-color: $bg-boton-verde;
+        color: $color-caja;
+        @include size-radius (475px, 212px, 20px);
+        @include flex-3p(column, center);
         h2{
             font-family: 'Preahvihear', sans-serif;
             text-align: center;

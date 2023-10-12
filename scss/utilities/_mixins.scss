@@ -1,0 +1,60 @@
+@mixin flex ($direction, $wrap, $justify, $align, $gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+@mixin none {
+    display: none;
+}
+@mixin flex-2p ($justify, $gap){
+    display: flex;
+    justify-content: $justify ;
+    gap: $gap;
+}
+@mixin flex-3p($direction, $justify){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+@mixin box-4p($padding, $position, $top, $z-index){
+    padding: $padding;
+    position: $position;
+    top: $top;
+    z-index: $z-index;
+}
+@mixin size ($width , $height){
+    width: $width;
+    height: $height;
+}
+@mixin size-radius($width, $height,$border-radius){
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+}
+@mixin size-padding($width, $height, $padding){
+    width: $width;
+    height: $height;
+    padding: $padding;
+}
+@mixin size-margin-top ($width, $height, $margin){
+    width: $width;
+    height: $height;
+    margin-top: $margin;
+}
+@mixin font-style-2p ($size, $decoration){
+    font-size: $size;
+    text-decoration: $decoration;
+}
+@mixin font-style-size-margin($size, $align, $margin){
+    font-size: $size;
+    text-align:$align;
+    margin: $margin;
+}
+@mixin background-image ($background, $size, $repeat){
+    background-image: $background;
+    background-size: $size;
+    background-repeat: $repeat;
+}
