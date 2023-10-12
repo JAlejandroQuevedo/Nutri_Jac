@@ -19,6 +19,16 @@
     flex-direction: $direction;
     justify-content: $justify;
 }
+@mixin flex-4p($direction, $align){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+@mixin flex-5p($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
 @mixin box-4p($padding, $position, $top, $z-index){
     padding: $padding;
     position: $position;
@@ -34,6 +44,12 @@
     height: $height;
     border-radius: $border-radius;
 }
+@mixin size-radius-margin($width, $height, $radius, $margin){
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    margin-bottom: $margin;
+}
 @mixin size-padding($width, $height, $padding){
     width: $width;
     height: $height;
@@ -44,9 +60,29 @@
     height: $height;
     margin-top: $margin;
 }
+@mixin size-margin-right ($width, $height, $margin){
+    width: $width;
+    height: $height;
+    margin-right: $margin;
+}
+@mixin font-property($family, $align, $size, $margin){
+    font-family: $family;
+    text-align: $align;
+    font-size: $size;
+    margin-bottom: $margin;
+}
+@mixin font-property-3p($family, $align, $color){
+    font-family: $family;
+    text-align: $align;
+    color: $color;
+}
 @mixin font-style-2p ($size, $decoration){
     font-size: $size;
     text-decoration: $decoration;
+}
+@mixin font-style-2p-align ($size, $align){
+    font-size: $size;
+    text-align: $align;
 }
 @mixin font-style-size-margin($size, $align, $margin){
     font-size: $size;
@@ -57,4 +93,18 @@
     background-image: $background;
     background-size: $size;
     background-repeat: $repeat;
+}
+@mixin button ($background, $margin, $width, $height, $border, $radius){
+    background-color: $background;
+    margin-bottom: $margin;
+    width: $width;
+    height: $height;
+    border: $border;
+    border-radius: $radius;
+}
+@mixin ancla ($color, $decoration, $size){
+    color: $color;
+    text-decoration: $decoration;
+    font-size: $size;
+    
 }

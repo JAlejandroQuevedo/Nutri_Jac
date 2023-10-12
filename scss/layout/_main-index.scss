@@ -28,112 +28,66 @@
         @include size-radius (475px, 212px, 20px);
         @include flex-3p(column, center);
         h2{
-            font-family: 'Preahvihear', sans-serif;
-            text-align: center;
-            font-size: 30px;
-            margin-bottom: 20px;
+            @include font-property($encabezado-frase, center, 30px, 20px)
         }
         p{
-            font-family: 'Preahvihear', sans-serif;
-            text-align: center;
+            @extend h2;
             font-size: 20px;
+            margin-bottom: none;
         }
     }
     .buttoms{
-        display: flex;
-        flex-direction: column;
+        @include flex-3p (column, none);
         button{
-            background-color: #f24c27;
-            margin-bottom: 20px;
-            width: 184px;
-            height: 35px;
-            border: none;
-            border-radius: 20px;
+            @include button($bg-boton-naranja, 20px, 184px, 35px, none, 20px);
             a{
-                color: white;
-                text-decoration: none;
-                font-size: 20px;
+                @include ancla ($color-caja, none, 20px);
             }
         }
     }
 }
 .conteinerTres{
+    @extend .conteinerUno;
     width: 100%;
-    padding: 0px 20px;
-    display: flex;
     height: 800px;
     margin-top: 50px;
-    justify-content: space-between;
-    align-items: center;
     .imgtextDos{
-        width: 531px;
-        height: 561px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include size(531px, 561px);
+        @include flex-4p (column, center);
         img{
-            width: 531px;
-            height: 454px;
-            border-radius: 1.25rem;
-            margin-bottom: 10px;
+            @include size-radius-margin(531px, 454px, 1.25rem, .625rem);
         }
     }
     .textDos{
-        width: 490px;
-        height: 69px;
-        background-color: #148C3E;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include button($bg-boton-verde, none, 490px, 69px, none, 20px);
+        @include flex-3p(column, center);
         h2{
-            font-family: 'Preahvihear', sans-serif;
-            text-align: center;
-            color: white;
+            @include font-property-3p($encabezado-frase, center, $color-caja);
         }
     }
 }
 .conteinerCuatro{
-    background-image: url(../assets/imagen/Back.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 167px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include background-image(url(../assets/imagen/Back.jpg), cover, no-repeat);
+    @include size(100%, 167px);
+    @include flex-5p(center, center);
     a{
-        font-family: 'Preahvihear', sans-serif;
-        color: white;
-        font-size: 20px;
-        text-decoration: none;
+        @include ancla($color-caja, none, 20px);
+        font-family: $encabezado-frase;
     }
 }
 .conteinerCinco{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
+    @extend .conteinerUno;
     .imgCinco{
         margin: 20px 20px 20px 20px;
     }
     .textCinco{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 525px;
-        height: 224px;
-        margin-right: 100px;
+        @include flex (column, none, center, center, none);
+        @include size-margin-right (525px, 224px, 100px);
         h2{
-            font-size: 'Preahvihear', sans-serif;
-            font-size: 30px;
-            text-align: center;
-            margin-bottom: 50px;
+            @include font-property($encabezado-frase, 30px, center, 50px);
         }
         p{
-            font-size: 20px;
-            text-align: center;
+            @include font-style-2p-align(20px, center);
         }
     }
 }
