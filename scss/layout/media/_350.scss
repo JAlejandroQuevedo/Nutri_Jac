@@ -79,15 +79,14 @@
         }
     }
     .conteinerTres{
-        @include flex-3p(column, none);
-        @include height-margin(350px, 100px);
+        @include flex-height(column, 350px);
         .imgtextDos {
             img{
                 @include none;
             }
         }
         .textDos{
-            @include size (250px, 50px);
+            @include size(250px, 50px);
             h2{
                 font-size: 20px;
             }
@@ -104,14 +103,13 @@
         .cards-group-uno{
         display: flex;
         }
-        .cards-group-dos{
+    .cards-group-dos{
         display: flex;
     }
     }
     .conteinerCuatro{
         @include flex-5p(center, center);
-        background-image: url(../assets/imagen/Back.jpg);
-        margin-top: 150px;
+        @include backgroung-height-margin-top(url(../assets/imagen/Back.jpg), 150px, 100px);
         .r-1{
             @include margin-2p(100px, 3px);
             a{

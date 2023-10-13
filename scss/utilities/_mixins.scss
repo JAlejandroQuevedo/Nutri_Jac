@@ -35,6 +35,11 @@
     align-self: $self;
     margin-bottom: $margin;
 }
+@mixin flex-height($direction, $height){
+    display: flex;
+    flex-direction: $direction;
+    height: $height;
+}
 @mixin box-4p($padding, $position, $top, $z-index){
     padding: $padding;
     position: $position;
@@ -65,10 +70,24 @@
     height: $height;
     padding: $padding;
 }
+@mixin size-padding-margin-top($width, $height, $padding, $margin){
+    width: $width;
+    height: $height;
+    padding: $padding;
+    margin-top:$margin ;
+}
 @mixin size-margin-margin($width, $height, $margin){
     width: $width;
     height:$height;
     margin: $margin;
+}
+@mixin height-margin-margin($height, $margin){
+    height:$height;
+    margin: $margin;
+}
+@mixin height-margin-left ($height, $margin){
+    height: $height;
+    margin-left: $margin;
 }
 @mixin size-margin-top ($width, $height, $margin){
     width: $width;
@@ -79,6 +98,12 @@
     width: $width;
     height: $height;
     margin-right: $margin;
+}
+@mixin size-back-border ($background, $width, $height, $radius){
+    background-color: $background;
+    width: $width;
+    height: $height;
+    border-radius: $radius;
 }
 @mixin font-property($family, $align, $size, $margin){
     font-family: $family;
@@ -109,6 +134,12 @@
     margin-left: $left;
     margin-bottom: $bottom;
     margin-left: $left;
+}
+@mixin margin-3p-size($top,$bottom, $right, $size){
+    margin-top: $top;
+    margin-bottom:$bottom;
+    margin-right: $right;
+    
 }
 @mixin margin-2p($left, $bottom){
     margin-left: $left;
@@ -161,4 +192,9 @@
     margin-top: $margin;
     height: $height;
     background-image: $background;
+}
+@mixin backgroung-height-margin-top($background, $margin, $height){
+    background-image: $background;
+    margin-top: $margin;
+    height: $height;
 }
