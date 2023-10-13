@@ -372,6 +372,32 @@ header .nav-wrapper nav .navBar li a {
   text-decoration: none;
 }
 
+.register-general {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  height: 700px;
+  margin-top: 20px;
+}
+.register-general .logo-img {
+  height: 100px;
+}
+.register-general .logo-img img {
+  width: 100%;
+  height: 100%;
+}
+.register-general .register {
+  height: 100%;
+  width: 800px;
+}
+.register-general .register .password input {
+  height: 20px;
+  text-align: center;
+}
+
 .conteiner-catalogo {
   width: 100%;
   height: 2000px;
@@ -879,30 +905,6 @@ header .nav-wrapper nav .navBar li a {
 }
 .whatsappfixed img {
   width: 100%;
-}
-
-.register-general {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 700px;
-  margin-top: 20px;
-}
-.register-general .logo-img {
-  height: 100px;
-}
-.register-general .logo-img img {
-  width: 100%;
-  height: 100%;
-}
-.register-general .register {
-  height: 100%;
-  width: 800px;
-}
-.register-general .register .password input {
-  height: 20px;
-  text-align: center;
 }
 
 @media (min-width: 350px) and (max-width: 768px) {
