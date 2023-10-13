@@ -137,7 +137,7 @@ header .nav-wrapper nav .navBar li a {
   color: #FFFFFF;
 }
 
-.conteinerUno, .conteinerTres {
+.conteinerUno {
   display: flex;
   flex-direction: none;
   flex-wrap: none;
@@ -148,7 +148,7 @@ header .nav-wrapper nav .navBar li a {
   height: 500px;
   padding: 0px 20px;
 }
-.conteinerUno .imgtext, .conteinerTres .imgtext {
+.conteinerUno .imgtext {
   width: 800px;
   height: 119px;
   display: flex;
@@ -158,18 +158,18 @@ header .nav-wrapper nav .navBar li a {
   align-items: none;
   gap: none;
 }
-.conteinerUno .imgtext h2, .conteinerTres .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerTres .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerUno .imgtext p, .conteinerDos .text .conteinerTres .imgtext p {
+.conteinerUno .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerUno .imgtext p {
   font-family: "Preahvihear", sans-serif;
   font-size: 35px;
   text-align: center;
   margin: 40px;
 }
-.conteinerUno .imgtext p, .conteinerTres .imgtext p {
+.conteinerUno .imgtext p {
   font-size: 30px;
   text-align: center;
   margin: none;
 }
-.conteinerUno .img img, .conteinerTres .img img {
+.conteinerUno .img img {
   width: 436px;
   height: 428px;
   margin-top: 45px;
@@ -226,8 +226,13 @@ header .nav-wrapper nav .navBar li a {
 }
 
 .conteinerTres {
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
   height: 800px;
   margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
 .conteinerTres .imgtextDos {
   width: 531px;
@@ -245,16 +250,16 @@ header .nav-wrapper nav .navBar li a {
 .conteinerTres .textDos {
   width: 490px;
   height: 69px;
-  border-radius: 20px;
   background-color: #148C3E;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .conteinerTres .textDos h2, .conteinerTres .textDos .conteinerDos .text p, .conteinerDos .text .conteinerTres .textDos p {
-  font-family: "Preahvihear" sans-serif;
+  font-family: "Preahvihear", sans-serif;
   text-align: center;
-  color: #FFFFFF;
+  color: white;
 }
 
 .conteinerCuatro {
@@ -944,19 +949,19 @@ header .nav-wrapper nav .navBar li a {
   .navBar li a {
     font-size: 20px;
   }
-  .conteinerUno, .conteinerTres {
+  .conteinerUno {
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .conteinerUno .img img, .conteinerTres .img img {
+  .conteinerUno .img img {
     display: none;
   }
-  .conteinerUno .imgtext h2, .conteinerTres .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerUno .imgtext p, .conteinerTres .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerTres .imgtext p {
+  .conteinerUno .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerUno .imgtext p {
     font-size: 25px;
   }
-  .conteinerUno .imgtext p, .conteinerTres .imgtext p {
+  .conteinerUno .imgtext p {
     font-size: 15px;
   }
   .conteinerDos {
@@ -1118,6 +1123,9 @@ header .nav-wrapper nav .navBar li a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: none;
+    align-items: none;
+    gap: none;
   }
   .navBar li {
     width: 92px;
@@ -1126,19 +1134,19 @@ header .nav-wrapper nav .navBar li a {
   .navBar li a {
     font-size: 15px;
   }
-  .conteinerUno, .conteinerTres {
-    height: 300px;
+  .conteinerUno {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 300px;
   }
-  .conteinerUno .img img, .conteinerTres .img img {
+  .conteinerUno .img img {
     display: none;
   }
-  .conteinerUno .imgtext h2, .conteinerTres .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerUno .imgtext p, .conteinerTres .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerTres .imgtext p {
+  .conteinerUno .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerUno .imgtext p {
     font-size: 30px;
   }
-  .conteinerUno .imgtext p, .conteinerTres .imgtext p {
+  .conteinerUno .imgtext p {
     font-size: 25px;
   }
   .conteinerDos {
@@ -1156,7 +1164,7 @@ header .nav-wrapper nav .navBar li a {
   }
   .conteinerDos .buttoms button {
     width: 150px;
-    height: 35px;
+    height: 15px;
   }
   .conteinerDos .buttoms button a {
     font-size: 15px;
