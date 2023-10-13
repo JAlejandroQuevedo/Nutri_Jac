@@ -108,3 +108,9 @@
     font-size: $size;
     
 }
+@mixin ancala-font($font, $color, $size, $decoration){
+    font-family: $font;
+    color: $color;
+    font-size: $size;
+    text-decoration: $decoration;
+}

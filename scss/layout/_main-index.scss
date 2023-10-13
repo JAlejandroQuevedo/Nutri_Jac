@@ -47,33 +47,31 @@
     }
 }
 .conteinerTres{
-    @extend .conteinerDos;
+    @extend .conteinerUno;
     height: 800px;
     margin-top: 50px;
-    background-image: none;
     .imgtextDos{
         @include size(531px, 561px);
-        @include flex-4p (column, center);
+        @include flex-4p(column, center);
         img{
-            @include size-radius-margin(531px, 454px, 1.25rem, .625rem);
+            @include size-radius-margin(531px, 454px, 1.25rem, 10px);
         }
     }
     .textDos{
-        @include button($bg-boton-verde, none, 490px, 69px, none, 20px);
+        @include size-radius(490px,69px, 20px);
+        background-color: #148C3E;
         @include flex-3p(column, center);
         h2{
-            @include font-property-3p($encabezado-frase, center, $color-caja);
+            @include font-property-3p('Preahvihear' sans-serif, center, $color-caja);
         }
     }
 }
 .conteinerCuatro{
-    @extend .conteinerDos;
-    background-image: url(../assets/imagen/Back.jpg);
-    height: 167px;
-    justify-content: center;
+    @include background-image(url(../assets/imagen/Back.jpg));
+    @include size (100%, 167px);
+    @include flex-5p(center, center);
     a{
-        @include ancla($color-caja, none, 20px);
-        font-family: $encabezado-frase;
+        @include ancala-font( 'Preahvihear' sans-serif, $color-caja, 20px, none);
     }
 }
 .conteinerCinco{
@@ -83,10 +81,10 @@
         margin: 20px 20px 20px 20px;
     }
     .textCinco{
-        @include flex (column, none, center, center, none);
-        @include size-margin-right (525px, 224px, 100px);
+        @include flex(column, none, center, center, none);
+        @include size-margin-right(525px, 224px, 100px);
         h2{
-            @include font-property($encabezado-frase, 30px, center, 50px);
+            @include font-property( 'Preahvihear' sans-serif, center, 30px, 50px);
         }
         p{
             @include font-style-2p-align(20px, center);
