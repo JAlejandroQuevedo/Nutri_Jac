@@ -1,25 +1,20 @@
 /* Ipad mini 768 x1024 */
 @media only screen and (min-width: 570px) and (max-width:1300px){
     .navBar{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include flex(row, wrap, none, none, none);
         li{
-            width: 92px;
-            height: 30px;
+            @include size (92px , 30px);
             a{
                 font-size: 15px;
             }
         }
     }
     .conteinerUno{
+        @include flex-5p(center, center);
         height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         .img{
             img{
-                display: none;
+                @include none;
             }
         }
         .imgtext {
@@ -34,8 +29,7 @@
     .conteinerDos{
         height: 170px;
         .text{
-            width: 350px;
-            height: 150px;
+            @include size (350px, 150px);
             h2{
                 font-size: 20px;
             }
@@ -45,8 +39,7 @@
         }
         .buttoms {
             button{
-                width: 150px;
-                height: 35px;
+                @include size (150px, 15px);
                 a{
                     font-size: 15px;
                 }
