@@ -1,8 +1,5 @@
 .whatsappfixed{
-    width: 50px;
-    position: fixed;
-    right: 4px;
-    bottom: 0;
+    @include fixed;
     img{
         width: 100%;
     }

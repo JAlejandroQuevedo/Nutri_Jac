@@ -1,39 +1,22 @@
 .card{
-    width: 290px;
-    height: 350px;
-    padding: 0px 20px;
-    margin: 70px;
+    @include size-padding-margin-margin(290px, 350px, 0px 20px, 70px);
     img{
-        width: 100%;
-        border-radius: 20px;
+        @include width-radius(100%, 20px);
     }
     h2{
-        font-family: 'Preahvihear', sans-serif;
-        font-size: 20px;
-        text-align: center;
-        margin-top: 0.5px;
-        margin-bottom: 10px;
+        @include font-property-margin-top($encabezado-frase, center, 20px, 0.5px, 10px);
     }
     p{
-        text-align: center;
-        margin: 2px;
+        @include align-margin(2px, center);
     }
     button{
-        background-color: #f24c27;
-        margin-bottom: 20px;
-        width: 50px;
-        height: 20px;
-        border: none;
-        border-radius: 20px;
-        margin-top: 10px;
+        @include button-top($bg-boton-naranja, 20px,10px, 50px, 20px, none, 20px);
         a{
-            color: white;
-            text-decoration: none;
+            @include ancla-color-decortarion($color-caja, none);
         }
         
     }
     .buttoms-2{
-        display: flex;
-        justify-content: center;
+        @include flex-5p(center, none);
     }
 }

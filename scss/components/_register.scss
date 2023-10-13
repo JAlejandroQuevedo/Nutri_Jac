@@ -1,0 +1,17 @@
+.register-general{
+    @include flex (column, none, center, center, none);
+    @include height-margin(700px, 20px);
+    .logo-img{
+        height: 100px;
+        img{
+            @include size (100%, 100%);
+        }
+    }
+    .register{
+        @include size (800px, 100%);
+        .password input{
+            @include height-align(20px, center);
+        }
+    }
+}
+

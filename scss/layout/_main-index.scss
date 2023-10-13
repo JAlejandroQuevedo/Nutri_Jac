@@ -60,7 +60,7 @@
         @include size-back-border($bg-boton-verde, 490px, 69px, 20px);
         @include flex-3p (column, center);
         h2{
-            @include font-property-3p( 'Preahvihear' sans-serif, center, $color-caja);
+            @include font-property-3p( $encabezado-frase, center, $color-caja);
         }
     }
 }
@@ -69,7 +69,7 @@
     @include size (100%, 167px);
     @include flex-5p(center, center);
     a{
-        @include ancala-font( 'Preahvihear' sans-serif, $color-caja, 20px, none);
+        @include ancala-font( $encabezado-frase, $color-caja, 20px, none);
     }
 }
 .conteinerCinco{
@@ -82,7 +82,7 @@
         @include flex(column, none, center, center, none);
         @include size-margin-right(525px, 224px, 100px);
         h2{
-            @include font-property( 'Preahvihear' sans-serif, center, 30px, 50px);
+            @include font-property($encabezado-frase, center, 30px, 50px);
         }
         p{
             @include font-style-2p-align(20px, center);

@@ -7,30 +7,20 @@
                 margin-top: 50px;
                 .affair {
                     label{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
+                        @include flex-4p(column, center);
                     }
                     textarea{
-                        width: 500px;
-                        height: 150px;
-                        border-radius: 10px;
-                        text-align: center;
-                        color: white;
-                        font-family: 'Preahvihear', sans-serif;
-                        font-size: 13px;
-                        border: none;
-                        background-color: #f24c27;
-                        margin-bottom: 10px;
+                        @include size-radius(500px, 150px, 10px);
+                        @include align-color-font-size-border-back-margin(center, $color-caja, $encabezado-frase, 13px, none, $bg-boton-naranja, 10px);
                         &:hover{
-                            border: 3px solid #148C3E
+                            border: 3px solid $bg-boton-verde
                         }
                     }
                 }
             }
         }
         h2{
-            display: none;
+            @include none;
         }
     }
 }

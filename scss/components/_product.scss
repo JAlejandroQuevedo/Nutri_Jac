@@ -1,6 +1,5 @@
 .change-product{
-    height: 1350px;
-    row-gap: 40px;
+    @include height-row-gap(1350px, 40px);
     h1{
         margin-top: 50px;
     }
