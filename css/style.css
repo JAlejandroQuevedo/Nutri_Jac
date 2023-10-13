@@ -906,7 +906,7 @@ header .nav-wrapper nav .navBar li a {
   }
   header .nav-wrapper nav label {
     display: flex;
-    color: white;
+    color: #FFFFFF;
     cursor: pointer;
   }
   header .nav-wrapper nav .menu {
@@ -915,15 +915,16 @@ header .nav-wrapper nav .navBar li a {
     overflow: hidden;
   }
   header .nav-wrapper nav .menu .navBar {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 0px;
   }
   header .nav-wrapper nav .menu .navBar li {
-    background-color: #e5e5e5;
+    background-color: #E5E5E5;
   }
   header .nav-wrapper nav .menu .navBar li a {
-    color: black;
+    color: #000000;
   }
 }
 /* Iphone SE 375 X 667 */
@@ -932,6 +933,9 @@ header .nav-wrapper nav .navBar li a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: none;
+    align-items: none;
+    gap: none;
   }
   .navBar li {
     width: 41px;
@@ -960,7 +964,7 @@ header .nav-wrapper nav .navBar li a {
     height: 170px;
   }
   .conteinerDos .text {
-    width: 380px;
+    width: 100%;
     height: 150px;
   }
   .conteinerDos .text h2, .conteinerDos .text p {
@@ -980,9 +984,11 @@ header .nav-wrapper nav .navBar li a {
     font-size: 10px;
   }
   .conteinerTres {
-    height: 350px;
     display: flex;
     flex-direction: column;
+    justify-content: none;
+    height: 350px;
+    margin-top: 100px;
   }
   .conteinerTres .imgtextDos img {
     display: none;
@@ -1013,9 +1019,10 @@ header .nav-wrapper nav .navBar li a {
   }
   .conteinerCuatro {
     display: flex;
-    margin-top: 150px;
-    height: 100px;
+    justify-content: center;
+    align-items: center;
     background-image: url(../assets/imagen/Back.jpg);
+    margin-top: 150px;
   }
   .conteinerCuatro .r-1 {
     margin-left: 100px;
@@ -1034,8 +1041,8 @@ header .nav-wrapper nav .navBar li a {
     font-size: 15px;
   }
   .conteinerCinco .textCinco p {
-    font-size: 10px;
     margin-left: 30px;
+    font-size: 10px;
   }
   .new-section {
     display: none;
@@ -1083,8 +1090,8 @@ header .nav-wrapper nav .navBar li a {
     height: 100px;
   }
   .container-blog .card-size-blog .h2-quin {
-    font-size: 20px;
     height: 20px;
+    font-size: 20px;
   }
   .container-blog .quincena1 {
     grid-column: 2/6;

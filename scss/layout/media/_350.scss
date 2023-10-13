@@ -8,21 +8,19 @@
                 }
                 label{
                     display: flex;
-                    color: white;
+                    color: $color-caja;
                     cursor: pointer;
                 }
                 .menu{
-                    width: 100%;
-                    height: 0;
+                    @include size(100%, 0);
                     overflow: hidden;
                     .navBar{
-                        flex-direction: column;
-                        align-items: center;
+                        @include flex-4p(column, center);
                         padding: 0.5rem 0px;
                         li{
-                            background-color:#e5e5e5;
+                            background-color:$bg-navBar-footer;
                             a{
-                                color: black;
+                                color: $color-general;
                             }
                         } 
                     }
@@ -34,12 +32,9 @@
 /* Iphone SE 375 X 667 */
 @media only screen and (min-width: 350px) and (max-width:570px){
     .navBar{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include flex(row, wrap, none, none, none);
         li{
-            width: 41px;
-            height: 20px;
+            @include size (41px, 20px);
             a{
                 font-size: 20px;
             }
@@ -47,12 +42,10 @@
     }
     .conteinerUno{
         height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-5p(center, center);
         .img{
             img{
-                display: none;
+                @include none;
             }
         }
         .imgtext{
@@ -65,11 +58,9 @@
         }
     } 
     .conteinerDos{
-        width: 100%;
-        height: 170px;
+        @include size(100%, 170px);
         .text{
-            width: 380px;
-            height: 150px;
+            @include size(100%, 150px);
             h2{
                 font-size: 15px;
             }
@@ -80,8 +71,7 @@
         .buttoms{
             margin-left: 10px;
             button{
-                width: 100px;
-                height: 35px;
+                @include size(100px, 35px);
                 a{
                     font-size: 10px;
                 }
@@ -89,51 +79,44 @@
         }
     }
     .conteinerTres{
-        height: 350px;
-        display: flex;
-        flex-direction: column;
+        @include flex-3p(column, none);
+        @include height-margin(350px, 100px);
         .imgtextDos {
             img{
-                display: none;
+                @include none;
             }
         }
         .textDos{
-            width: 250px;
-            height: 50px;
+            @include size (250px, 50px);
             h2{
                 font-size: 20px;
             }
         }
         .card{
-            width: 200px;
-            height: 100px;
-            margin: 50px 0;
+            @include size-margin-margin(200px, 100px, 50px 0);
             h2{
                 font-size: 10px;
             } 
             p{
-                display: none;
+                @include none;
             }
         }
-            .cards-group-uno{
+        .cards-group-uno{
         display: flex;
-    }
-    .cards-group-dos{
+        }
+        .cards-group-dos{
         display: flex;
     }
     }
     .conteinerCuatro{
-        display: flex;
-        margin-top: 150px;
-        height: 100px;
+        @include flex-5p(center, center);
         background-image: url(../assets/imagen/Back.jpg);
+        margin-top: 150px;
         .r-1{
-            margin-left: 100px;
-            margin-bottom: 3px;
+            @include margin-2p(100px, 3px);
             a{
                 h2{
-                    margin-right: 80px;
-                    font-size: 15px;
+                    @include margin-right-size(80px, 15px);
                 }
             }
         }
@@ -141,23 +124,20 @@
     .conteinerCinco{
         .imgCinco{
             img{
-                display: none;
+                @include none;
             }
         }
         .textCinco{
             h2{
-                margin-left: 30px;
-                margin-bottom: 30px;
-                font-size: 15px;
+                @include margin-2p-size(30px, 30px, 15px);
             }
             p{
-                font-size: 10px;
-                margin-left: 30px;
+                @include margin-left-size(30px,10px);
             }
         }
     } 
     .new-section{
-        display: none;
+        @include none;
     }
     footer{
         height: 150px;
@@ -165,10 +145,9 @@
             ul{
                 gap: 10px;
                 li{
-                    width: 70px;
-                    height: 30px;
+                    @include size(70px, 30px);
                     &:first-child{
-                        display: none;
+                        @include none;
                     }
                     a{
                         font-size: 10px;
@@ -178,18 +157,13 @@
         }
         .socialMedia {
             img{
-                width: 25px;
-                height: 23px;
+                @include size(25px, 23px);
             }
         }
         .img-logo{
-            display: flex;
-            flex-direction: column;
-            align-self: flex-end;
-            margin-bottom: 10px;
+            @include flex-align-self-margin(column, flex-end, 10px);
             img{
-                width: 35px;
-                height: 40px;
+                @include size(35px, 40px);
             }
         }
     } 
@@ -197,16 +171,13 @@
     .container-blog{
         height: 700px;
         .card-size-blog{
-            width: 80px;
-            height: 10px;
+            @include size (80px, 10px);
             img{
-                width: 100%;
-                height: 100px;
+                @include size (100%, 100px);
                 
             }
             .h2-quin{
-                font-size: 20px;
-                height: 20px;
+                @include size-height(20px, 20px);
             }
         }
         .quincena1 {
