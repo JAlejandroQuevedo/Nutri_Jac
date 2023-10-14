@@ -26,9 +26,15 @@ header{
                     @include flex (none, none, center, center, none);
                     background-color:$bg-boton-verde;
                     @include size-radius (184px, 35px, 20px);
+                    box-shadow: 5px 5px 8px $bg-boton-naranja;
+                    border-radius: 10px;
                     a{
                         @include font-style-2p (20px, none);
                         color: $color-caja;
+                        &:active{
+                            animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+                            animation-duration: 3s; /* don't forget to set a duration! */
+                        }
                     }
                 }
             }

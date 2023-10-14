@@ -36,6 +36,10 @@ footer .socialMedia img {
   height: 41px;
   border-radius: none;
 }
+footer .socialMedia img:active {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
 footer .access ul {
   display: flex;
   justify-content: none;
@@ -53,11 +57,17 @@ footer .access ul li {
   height: 37px;
   border-radius: 1.25rem;
   background-color: #F24C27;
+  box-shadow: 5px 5px 8px #148C3E;
+  border-radius: 10px;
 }
 footer .access ul li a {
   color: #FFFFFF;
   font-size: 20px;
   text-decoration: none;
+}
+footer .access ul li a:active {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
 footer .img-logo {
   display: flex;
@@ -72,6 +82,10 @@ footer .img-logo img {
   width: 76px;
   height: 86px;
   border-radius: none;
+}
+footer .img-logo img:active {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 header {
@@ -130,11 +144,17 @@ header .nav-wrapper nav .navBar li {
   width: 184px;
   height: 35px;
   border-radius: 20px;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 10px;
 }
 header .nav-wrapper nav .navBar li a {
   font-size: 20px;
   text-decoration: none;
   color: #FFFFFF;
+}
+header .nav-wrapper nav .navBar li a:active {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 .conteinerUno {
@@ -189,6 +209,8 @@ header .nav-wrapper nav .navBar li a {
 .conteinerDos .text {
   background-color: #148C3E;
   color: #FFFFFF;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 10px;
   width: 475px;
   height: 212px;
   border-radius: 20px;
@@ -218,6 +240,11 @@ header .nav-wrapper nav .navBar li a {
   height: 35px;
   border: none;
   border-radius: 20px;
+  box-shadow: 5px 5px 8px #148C3E;
+}
+.conteinerDos .buttoms button:active {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
 .conteinerDos .buttoms button a {
   color: #FFFFFF;
@@ -255,6 +282,7 @@ header .nav-wrapper nav .navBar li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 5px 5px 8px #F24C27;
 }
 .conteinerTres .textDos h2, .conteinerTres .textDos .conteinerDos .text p, .conteinerDos .text .conteinerTres .textDos p {
   font-family: "Preahvihear", sans-serif;
@@ -271,12 +299,21 @@ header .nav-wrapper nav .navBar li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px 8px #148C3E;
 }
 .conteinerCuatro a {
   font-family: "Preahvihear", sans-serif;
   color: #FFFFFF;
   font-size: 20px;
   text-decoration: none;
+}
+.conteinerCuatro a h2, .conteinerCuatro a .conteinerDos .text p, .conteinerDos .text .conteinerCuatro a p {
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 10px;
+}
+.conteinerCuatro a h2:active, .conteinerCuatro a .conteinerDos .text p:active, .conteinerDos .text .conteinerCuatro a p:active {
+  animation: backOutRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 .conteinerCinco {
@@ -341,12 +378,31 @@ header .nav-wrapper nav .navBar li a {
   background-color: #F24C27;
   margin-bottom: 10px;
 }
+.form-textarea .personalized textarea:focus {
+  box-shadow: 5px 5px 8px #F24C27;
+}
 .form-textarea .personalized-1 {
   height: 520px;
 }
 
 .form-textarea .section-large .large {
   font-size: 30px;
+}
+
+.log-in input:focus {
+  box-shadow: 5px 5px 8px #F24C27;
+}
+.log-in input[type=submit] {
+  display: block;
+  margin: 1em auto;
+  background-color: #F24C27;
+  color: #FFFFFF;
+  height: 20px;
+  border: 2px solid #148C3E;
+}
+.log-in input[type=submit]:active {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 .back-section {
@@ -367,6 +423,10 @@ header .nav-wrapper nav .navBar li a {
   border-radius: 20px;
   grid-row: 12/13;
 }
+.back-section .back-log:active {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
 .back-section .back-log a {
   color: #FFFFFF;
   text-decoration: none;
@@ -380,16 +440,14 @@ header .nav-wrapper nav .navBar li a {
   width: 100%;
   height: 2000px;
 }
-
-.h1-conteiner-dimension {
+.conteiner-catalogo .h1-conteiner-dimension {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-row: 1/2;
   grid-column: 5/10;
 }
-
-.h1-conteiner-dimension h1 {
+.conteiner-catalogo .h1-conteiner-dimension h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,21 +457,21 @@ header .nav-wrapper nav .navBar li a {
   height: 50px;
   border-radius: 20px;
   font-size: 30px;
+  box-shadow: 5px 5px 8px #F24C27;
 }
-
-.quincena1 {
+.conteiner-catalogo .quincena1 {
   grid-row: 2/3;
   grid-column: 6/8;
   height: 300px;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 20px;
 }
-
-.img-quni {
+.conteiner-catalogo .img-quni {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-
-.h2-quin {
+.conteiner-catalogo .h2-quin {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -421,86 +479,86 @@ header .nav-wrapper nav .navBar li a {
   border-radius: 20px;
   height: 40px;
   margin-top: 20px;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 20px;
 }
-
-.a-style {
+.conteiner-catalogo .a-style {
   font-family: "Preahvihear", sans-serif;
   color: #FFFFFF;
   text-decoration: none;
 }
-
-.quincena2 {
+.conteiner-catalogo .quincena2 {
   grid-row: 2/3;
   grid-column: 9/11;
   height: 300px;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 20px;
 }
-
-.quincena2 img {
+.conteiner-catalogo .quincena2 img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-
-.quincena3 {
+.conteiner-catalogo .quincena3 {
   grid-row: 4/5;
   grid-column: 6/8;
   height: 300px;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 20px;
 }
-
-.quincena3 img {
+.conteiner-catalogo .quincena3 img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-
-.quincena4 {
+.conteiner-catalogo .quincena4 {
   grid-row: 4/5;
   grid-column: 9/11;
   height: 300px;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 20px;
 }
-
-.quincena4 img {
+.conteiner-catalogo .quincena4 img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-
-.quincena5 {
+.conteiner-catalogo .quincena5 {
   grid-row: 6/7;
   grid-column: 6/8;
   height: 300px;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 20px;
 }
-
-.quincena5 img {
+.conteiner-catalogo .quincena5 img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-
-.quincena6 {
+.conteiner-catalogo .quincena6 {
   grid-row: 6/7;
   grid-column: 9/11;
   height: 300px;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 20px;
 }
-
-.quincena6 img {
+.conteiner-catalogo .quincena6 img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-
-.image {
+.conteiner-catalogo .image {
   grid-column: 2/6;
   grid-row: 2/4;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 20px;
 }
-
-.image img {
+.conteiner-catalogo .image img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-
-.note {
+.conteiner-catalogo .note {
   background-color: #F24C27;
   height: 200px;
   grid-row: 4/5;
@@ -510,20 +568,21 @@ header .nav-wrapper nav .navBar li a {
   justify-content: center;
   border-radius: 20px;
   margin-top: 50px;
+  box-shadow: 5px 5px 8px #148C3E;
 }
-
-.note p {
+.conteiner-catalogo .note p {
   font-size: 25px;
   color: #FFFFFF;
   text-align: none;
+  text-align: center;
 }
-
-.list {
+.conteiner-catalogo .list {
   grid-column: 6/11;
   grid-row: 8/11;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 20px;
 }
-
-.list img {
+.conteiner-catalogo .list img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -556,6 +615,7 @@ header .nav-wrapper nav .navBar li a {
   border-radius: 10px;
   width: 400px;
   color: #FFFFFF;
+  box-shadow: 5px 5px 8px #F24C27;
 }
 .general-form .section2 {
   grid-column: 3/4;
@@ -579,6 +639,7 @@ header .nav-wrapper nav .navBar li a {
   border-radius: 20px;
   grid-column: 2/5;
   grid-row: 3/7;
+  box-shadow: 5px 5px 8px #E5E5E5;
 }
 .general-form .section3 h2, .general-form .section3 .conteinerDos .text p, .conteinerDos .text .general-form .section3 p {
   margin-top: 20px;
@@ -616,6 +677,10 @@ header .nav-wrapper nav .navBar li a {
   color: #FFFFFF;
   height: 20px;
 }
+.general-form .section3 form input[type=submit]:active {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
 .general-form .section3 form input[type=text] {
   height: 20px;
   text-align: center;
@@ -646,6 +711,9 @@ header .nav-wrapper nav .navBar li a {
 .general-form .section3 form input:hover {
   border: solid 2px #148C3E;
 }
+.general-form .section3 form input:focus {
+  box-shadow: 5px 5px 8px #F24C27;
+}
 .general-form .section3 form .input-1 input {
   width: 100px;
   height: 30px;
@@ -665,6 +733,7 @@ header .nav-wrapper nav .navBar li a {
   gap: none;
   grid-column: 5/8;
   grid-row: 2/4;
+  box-shadow: 5px 5px 8px #148C3E;
 }
 .section4 h2, .section4 .conteinerDos .text p, .conteinerDos .text .section4 p {
   font-size: 20px;
@@ -706,6 +775,9 @@ header .nav-wrapper nav .navBar li a {
 }
 .form-textarea .textarea-1 form fieldset .affair textarea:hover {
   border: 3px solid #148C3E;
+}
+.form-textarea .textarea-1 form fieldset .affair textarea:focus {
+  box-shadow: 5px 5px 8px #F24C27;
 }
 .form-textarea .textarea-1 h2, .form-textarea .textarea-1 .conteinerDos .text p, .conteinerDos .text .form-textarea .textarea-1 p {
   display: none;
@@ -872,6 +944,13 @@ header .nav-wrapper nav .navBar li a {
   justify-content: center;
   align-items: none;
 }
+.card .buttoms-2:active {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+.card .buttoms-2 button {
+  box-shadow: 5px 5px 8px #148C3E;
+}
 
 .whatsappfixed {
   width: 50px;
@@ -881,6 +960,10 @@ header .nav-wrapper nav .navBar li a {
 }
 .whatsappfixed img {
   width: 100%;
+}
+.whatsappfixed img:active {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 .register-general {
@@ -909,7 +992,7 @@ header .nav-wrapper nav .navBar li a {
   text-align: center;
 }
 
-@media (min-width: 350px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
   header .nav-wrapper nav #toggle:checked ~ .menu {
     height: 100%;
   }

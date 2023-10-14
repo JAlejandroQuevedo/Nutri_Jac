@@ -25,6 +25,8 @@
     .text{
         background-color: $bg-boton-verde;
         color: $color-caja;
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+        border-radius: 10px;    
         @include size-radius (475px, 212px, 20px);
         @include flex-3p(column, center);
         h2{
@@ -40,6 +42,11 @@
         @include flex-3p (column, none);
         button{
             @include button($bg-boton-naranja, 20px, 184px, 35px, none, 20px);
+            box-shadow: 5px 5px 8px $bg-boton-verde;
+            &:active{
+                animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+                animation-duration: 3s; /* don't forget to set a duration! */
+            }
             a{
                 @include ancla ($color-caja, none, 20px);
             }
@@ -59,6 +66,7 @@
     .textDos{
         @include size-back-border($bg-boton-verde, 490px, 69px, 20px);
         @include flex-3p (column, center);
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
         h2{
             @include font-property-3p( $encabezado-frase, center, $color-caja);
         }
@@ -68,8 +76,17 @@
     @include background-image(url(../assets/imagen/Back.jpg));
     @include size (100%, 167px);
     @include flex-5p(center, center);
+    box-shadow: 5px 5px 8px $bg-boton-verde;
     a{
         @include ancala-font( $encabezado-frase, $color-caja, 20px, none);
+        h2{
+            box-shadow: 5px 5px 8px $bg-boton-naranja;
+            border-radius: 10px;
+            &:active{
+                animation: backOutRight; /* referring directly to the animation's @keyframe declaration */
+                animation-duration: 3s; /* don't forget to set a duration! */
+            }
+        }
     }
 }
 .conteinerCinco{

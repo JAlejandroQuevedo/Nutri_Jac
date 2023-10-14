@@ -13,7 +13,10 @@
                         @include size-radius(500px, 150px, 10px);
                         @include align-color-font-size-border-back-margin(center, $color-caja, $encabezado-frase, 13px, none, $bg-boton-naranja, 10px);
                         &:hover{
-                            border: 3px solid $bg-boton-verde
+                            border: 3px solid $bg-boton-verde;
+                        }
+                        &:focus{
+                            box-shadow: 5px 5px 8px $bg-boton-naranja;
                         }
                     }
                 }

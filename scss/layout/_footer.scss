@@ -8,6 +8,10 @@ footer{
         margin-bottom: 10px;
         img{
             @include size-radius (43px, 41px, none);
+            &:active{
+                animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+                animation-duration: 3s; /* don't forget to set a duration! */
+            }
         }
     }
     .access{
@@ -18,9 +22,15 @@ footer{
                 @include flex (none, none, center, center, none);
                 @include size-radius (254px, 37px, 1.25rem);
                 background-color: $bg-boton-naranja;
+                box-shadow: 5px 5px 8px $bg-boton-verde;
+                border-radius: 10px;
                 a{
                     color: $color-caja;
-                    @include font-style-2p (20px, none)
+                    @include font-style-2p (20px, none);
+                    &:active{
+                        animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+                        animation-duration: 3s; /* don't forget to set a duration! */
+                    }
                 }
             }
         }
@@ -30,6 +40,10 @@ footer{
         margin-bottom: 50px;
         img{
             @include size-radius (76px, 86px, none);
+            &:active{
+                animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+                animation-duration: 3s; /* don't forget to set a duration! */
+            }
         }
     }
 }

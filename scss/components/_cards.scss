@@ -18,5 +18,12 @@
     }
     .buttoms-2{
         @include flex-5p(center, none);
+        &:active{
+            animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 3s; /* don't forget to set a duration! */
+        }
+        button{
+            box-shadow: 5px 5px 8px $bg-boton-verde;
+        }
     }
 }

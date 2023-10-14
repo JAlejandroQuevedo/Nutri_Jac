@@ -1,89 +1,112 @@
 .conteiner-catalogo{
     @include column-rows-gap(repeat(12,1fr),repeat(12,1fr), 20px);
     @include size (100%, 2000px);
+    .h1-conteiner-dimension{
+        @include flex-5p(center, center);
+        grid-row: 1/2;
+        grid-column: 5/10;  
+        h1{
+            @include flex-5p(center, center);
+            @include size-back-border-color-size($bg-boton-verde, $color-caja, 300px, 50px, 20px,30px);
+            box-shadow: 5px 5px 8px $bg-boton-naranja;
+        }
+    }
+    .quincena1{
+        grid-row: 2/3;
+        grid-column: 6/8;
+        height: 300px;
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+        border-radius: 20px;
+    }
+    .img-quni{
+        @include size-radius(100%,100%, 20px);
+    }
+    .h2-quin{
+        @include flex-5p(center, center);
+        @include margin-top-back-radius-height($bg-boton-verde, 20px, 40px, 20px);
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+        border-radius: 20px;
+    }
+    .a-style{
+        @include ancla-decoration-font($encabezado-frase, $color-caja, none);
+    }
+    .quincena2{
+        grid-row: 2/3;
+        grid-column: 9/11;
+        height: 300px;
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+        border-radius: 20px;
+        img{
+            @include size-radius(100%, 100%, 20px);
+        }
+    }
+    .quincena3{
+        grid-row: 4/5;
+        grid-column: 6/8;
+        height: 300px;
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+        border-radius: 20px;
+        img{
+            @include size-radius(100%, 100%, 20px);
+        }
+    }
+    .quincena4{
+        grid-row: 4/5;
+        grid-column: 9/11;
+        height: 300px;
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+        border-radius: 20px;
+        img{
+            @include size-radius(100%, 100%, 20px);
+        }
+    }
+    .quincena5{
+        grid-row: 6/7;
+        grid-column: 6/8;
+        height: 300px;
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+        border-radius: 20px;
+        img{
+            @include size-radius(100%, 100%, 20px);
+        }
+    }
+    .quincena6{
+        grid-row: 6/7;
+        grid-column: 9/11;
+        height: 300px;
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+        border-radius: 20px;
+        img{
+            @include size-radius(100%, 100%, 20px);
+        }
+    }
+    .image{
+        grid-column: 2/6;
+        grid-row: 2/4;
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+        border-radius: 20px;
+        img{
+            @include size-radius(100%, 100%, 20px);
+        }
+    }
+    .note{
+        @include note;
+        box-shadow: 5px 5px 8px $bg-boton-verde;
+        p{
+            @include ancla-align-font(25px,$color-caja, none);
+            text-align: center;
+        
+        }
+    }
+    .list{
+        grid-column: 6/11;
+        grid-row: 8/11;
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+        border-radius: 20px;
+        img{
+            @include size-radius(100%, 100%, 20px);
+        }
+    }
+    
 }
-.h1-conteiner-dimension{
-    @include flex-5p(center, center);
-    grid-row: 1/2;
-    grid-column: 5/10;  
-}
-.h1-conteiner-dimension h1{
-    @include flex-5p(center, center);
-    @include size-back-border-color-size($bg-boton-verde, $color-caja, 300px, 50px, 20px,30px);
-}
-.quincena1{
-    grid-row: 2/3;
-    grid-column: 6/8;
-    height: 300px;
-}
-.img-quni{
-    @include size-radius(100%,100%, 20px);
-}
-.h2-quin{
-    @include flex-5p(center, center);
-    @include margin-top-back-radius-height($bg-boton-verde, 20px, 40px, 20px);
-}
-.a-style{
-    @include ancla-decoration-font($encabezado-frase, $color-caja, none);
-}
-.quincena2{
-    grid-row: 2/3;
-    grid-column: 9/11;
-    height: 300px;
-}
-.quincena2 img{
-    @include size-radius(100%, 100%, 20px);
-}
-.quincena3{
-    grid-row: 4/5;
-    grid-column: 6/8;
-    height: 300px;
-}
-.quincena3 img{
-    @include size-radius(100%, 100%, 20px);
-}
-.quincena4{
-    grid-row: 4/5;
-    grid-column: 9/11;
-    height: 300px;
-}
-.quincena4 img{
-    @include size-radius(100%, 100%, 20px);
-}
-.quincena5{
-    grid-row: 6/7;
-    grid-column: 6/8;
-    height: 300px;
-}
-.quincena5 img{
-    @include size-radius(100%, 100%, 20px);
-}
-.quincena6{
-    grid-row: 6/7;
-    grid-column: 9/11;
-    height: 300px;
-}
-.quincena6 img{
-    @include size-radius(100%, 100%, 20px);
-}
-.image{
-    grid-column: 2/6;
-    grid-row: 2/4;
-}
-.image img{
-    @include size-radius(100%, 100%, 20px);
-}
-.note{
-    @include note;
-}
-.note p{
-    @include ancla-align-font(25px,$color-caja, none);
 
-}
-.list{
-    grid-column: 6/11;
-    grid-row: 8/11;
-}
-.list img{
-    @include size-radius(100%, 100%, 20px);
-}

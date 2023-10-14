@@ -1,3 +1,18 @@
+.log-in{
+    input{
+        &:focus{
+            box-shadow: 5px 5px 8px $bg-boton-naranja;
+        }
+    }
+    input[type=submit]{
+        @include input-submit;
+        border: 2px solid $bg-boton-verde;
+        &:active{
+            animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 3s; /* don't forget to set a duration! */
+        }
+    }
+}
 .back-section{
     @include flex-5p(center, center);
     @include size(100%,90px);
@@ -6,6 +21,10 @@
         @include size-back-border($bg-boton-verde, 100px, 40px, 20px);
         // @include grid-row(12/13);
         grid-row: 12/13;
+        &:active{
+            animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 3s; /* don't forget to set a duration! */
+        }
         a{
             @include ancla-color-decortarion($color-caja, none);
         }

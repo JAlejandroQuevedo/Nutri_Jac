@@ -9,6 +9,9 @@
         textarea{
             @include size-radius(500px, 100px, 10px);
             @include align-color-font-size-border-back-margin(center, $color-caja,$encabezado-frase,13px, none, $bg-boton-naranja, 10px);
+            &:focus{
+                box-shadow: 5px 5px 8px $bg-boton-naranja;
+            }
         }
     }
     .personalized-1{

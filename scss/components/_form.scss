@@ -7,6 +7,7 @@
         h1{
             @include flex-5p(center, none);
             @include family-size-back-color-radius-width($encabezado-frase, 40px, $bg-boton-verde, 10px, 400px, $color-caja);
+            box-shadow: 5px 5px 8px $bg-boton-naranja;
         }
     }
     .section2{
@@ -21,6 +22,7 @@
         @include height-radius($bg-caja-gris, 285px,20px);
         grid-column: 2/5;
         grid-row: 3/7;
+        box-shadow: 5px 5px 8px $bg-navBar-footer;    
         h2{
             @include margin-top-bottom-famlily(20px, 20px,$encabezado-frase);
         }
@@ -45,7 +47,11 @@
                 }
             }
             input[type=submit]{
-                @include input-submit; 
+                @include input-submit;
+                &:active{
+                    animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+                    animation-duration: 3s; /* don't forget to set a duration! */
+                }
             }
             input[type=text]{
                 @include input-format;
@@ -68,6 +74,11 @@
                     @include input-hover;
                 }
             }
+            input{
+                &:focus{
+                    box-shadow: 5px 5px 8px $bg-boton-naranja;
+                }
+            }
             .input-1 {
                 input{
                     @include size (100px, 30px);
@@ -82,6 +93,8 @@
     @include flex(column, none, center, center, none);
     grid-column: 5/8;
     grid-row: 2/4;
+    box-shadow: 5px 5px 8px $bg-boton-verde;
+    
     h2{
         @include h2-box;
     }
