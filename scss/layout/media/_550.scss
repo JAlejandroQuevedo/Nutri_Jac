@@ -39,7 +39,7 @@
         }
         .buttoms {
             button{
-                @include size (150px, 40px);
+                @include size (150px, 15px);
                 a{
                     font-size: 15px;
                 }
@@ -118,7 +118,7 @@
     }
     /* Blog*/
     .container-blog{
-        @include size(100%, 800px);
+        height: 800px;
         .card-size-blog{
             @include size(100px, 10px);
             img{
@@ -129,19 +129,16 @@
                 height: 20px;
             }
         }
-        .shadow{
-            box-shadow: none;
-        }
         .image{
             grid-row: 3/7;
             grid-column: 1/5;
             margin-left: 20px;
         }
         .move-1{
-            grid-row: 5/6;
+            grid-row: 6/7;
         }
         .move-2{
-            grid-row: 8/9;
+            grid-row: 9/10;
         }
     }
 }

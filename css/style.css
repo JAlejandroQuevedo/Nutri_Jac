@@ -999,366 +999,6 @@ header .nav-wrapper nav .navBar li a:active {
   text-align: center;
 }
 
-@media (min-width: 350px) and (max-width: 768px) {
-  header .nav-wrapper nav #toggle:checked ~ .menu {
-    height: 100%;
-  }
-  header .nav-wrapper nav label {
-    display: flex;
-    color: #FFFFFF;
-    cursor: pointer;
-  }
-  header .nav-wrapper nav .menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-  }
-  header .nav-wrapper nav .menu .navBar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0px;
-  }
-  header .nav-wrapper nav .menu .navBar li {
-    background-color: #E5E5E5;
-  }
-  header .nav-wrapper nav .menu .navBar li a {
-    color: #000000;
-  }
-}
-/* Iphone SE 375 X 667 */
-@media only screen and (min-width: 350px) and (max-width: 570px) {
-  .navBar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: none;
-    align-items: none;
-    gap: none;
-  }
-  .navBar li {
-    width: 41px;
-    height: 20px;
-  }
-  .navBar li a {
-    font-size: 20px;
-  }
-  .conteinerUno {
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .conteinerUno .img img {
-    display: none;
-  }
-  .conteinerUno .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerUno .imgtext p {
-    font-size: 25px;
-  }
-  .conteinerUno .imgtext p {
-    font-size: 15px;
-  }
-  .conteinerDos {
-    width: 100%;
-    height: 170px;
-  }
-  .conteinerDos .text {
-    width: 100%;
-    height: 150px;
-  }
-  .conteinerDos .text h2, .conteinerDos .text p {
-    font-size: 15px;
-  }
-  .conteinerDos .text p {
-    font-size: 10px;
-  }
-  .conteinerDos .buttoms {
-    margin-left: 10px;
-  }
-  .conteinerDos .buttoms button {
-    width: 100px;
-    height: 35px;
-  }
-  .conteinerDos .buttoms button a {
-    font-size: 10px;
-  }
-  .conteinerTres {
-    display: flex;
-    flex-direction: column;
-    height: 350px;
-  }
-  .conteinerTres .imgtextDos img {
-    display: none;
-  }
-  .conteinerTres .textDos {
-    width: 250px;
-    height: 50px;
-  }
-  .conteinerTres .textDos h2, .conteinerTres .textDos .conteinerDos .text p, .conteinerDos .text .conteinerTres .textDos p {
-    font-size: 20px;
-  }
-  .conteinerTres .card {
-    width: 200px;
-    height: 100px;
-    margin: 50px 0;
-  }
-  .conteinerTres .card h2, .conteinerTres .card .conteinerDos .text p, .conteinerDos .text .conteinerTres .card p {
-    font-size: 10px;
-  }
-  .conteinerTres .card p {
-    display: none;
-  }
-  .conteinerTres .cards-group-uno {
-    display: flex;
-  }
-  .conteinerTres .cards-group-dos {
-    display: flex;
-  }
-  .conteinerCuatro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../assets/imagen/Back.jpg);
-    margin-top: 150px;
-    height: 100px;
-  }
-  .conteinerCuatro .r-1 {
-    margin-left: 100px;
-    margin-bottom: 3px;
-  }
-  .conteinerCuatro .r-1 a h2, .conteinerCuatro .r-1 a .conteinerDos .text p, .conteinerDos .text .conteinerCuatro .r-1 a p {
-    margin-right: 80px;
-    font-size: 15px;
-  }
-  .conteinerCinco .imgCinco img {
-    display: none;
-  }
-  .conteinerCinco .textCinco h2, .conteinerCinco .textCinco .conteinerDos .text p, .conteinerDos .text .conteinerCinco .textCinco p {
-    margin-left: 30px;
-    margin-bottom: 30px;
-    font-size: 15px;
-  }
-  .conteinerCinco .textCinco p {
-    margin-left: 30px;
-    font-size: 10px;
-  }
-  .new-section {
-    display: none;
-  }
-  main .h1-conteiner-dimension {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    width: 100%;
-  }
-  main .h1-conteiner-dimension h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-  .conteiner-catalogo {
-    height: 700px;
-  }
-  .conteiner-catalogo .card-size-blog {
-    width: 80px;
-    height: 10px;
-  }
-  .conteiner-catalogo .card-size-blog img {
-    width: 100%;
-    height: 100px;
-  }
-  .conteiner-catalogo .card-size-blog .h2-quin {
-    height: 20px;
-    font-size: 20px;
-    font-size: 10px;
-  }
-  .conteiner-catalogo .quincena1 {
-    grid-column: 2/6;
-    box-shadow: none;
-  }
-  .conteiner-catalogo .quincena2 {
-    grid-column: 10/11;
-    box-shadow: none;
-  }
-  .conteiner-catalogo .quincena3 {
-    grid-column: 2/6;
-    box-shadow: none;
-  }
-  .conteiner-catalogo .quincena4 {
-    grid-column: 10/11;
-    box-shadow: none;
-  }
-  .conteiner-catalogo .quincena5 {
-    grid-column: 2/6;
-  }
-  .conteiner-catalogo .quincena6 {
-    grid-column: 10/11;
-    box-shadow: none;
-  }
-  .conteiner-catalogo .move-1 {
-    grid-row: 5/6;
-    box-shadow: none;
-  }
-  .conteiner-catalogo .move-2 {
-    grid-row: 8/9;
-    box-shadow: none;
-  }
-  .conteiner-catalogo .list {
-    display: none;
-  }
-  .conteiner-catalogo .image {
-    display: none;
-  }
-  .change-product {
-    height: 700px;
-  }
-  .change-product .card-size-blog {
-    width: 80px;
-    height: 10px;
-  }
-  .change-product .card-size-blog img {
-    width: 100%;
-    height: 100px;
-  }
-  .change-product .card-size-blog .h2-quin {
-    height: 20px;
-    font-size: 20px;
-    font-size: 10px;
-  }
-  .change-product .quincena1 {
-    grid-column: 2/6;
-    box-shadow: none;
-  }
-  .change-product .quincena2 {
-    grid-column: 7/8;
-    box-shadow: none;
-  }
-  .change-product .quincena3 {
-    grid-column: 2/6;
-    box-shadow: none;
-  }
-  .change-product .quincena4 {
-    grid-column: 7/8;
-    box-shadow: none;
-  }
-  .change-product .quincena5 {
-    grid-column: 2/6;
-  }
-  .change-product .quincena6 {
-    grid-column: 7/8;
-    box-shadow: none;
-  }
-  .change-product .move-1 {
-    grid-row: 5/6;
-    box-shadow: none;
-  }
-  .change-product .move-2 {
-    grid-row: 8/9;
-    box-shadow: none;
-  }
-  .change-product .list {
-    display: none;
-  }
-  .change-product .image {
-    display: none;
-  }
-  /* Blog*/
-  .container-blog {
-    height: 700px;
-  }
-  .container-blog .card-size-blog {
-    width: 80px;
-    height: 10px;
-  }
-  .container-blog .card-size-blog img {
-    width: 100%;
-    height: 100px;
-  }
-  .container-blog .card-size-blog .h2-quin {
-    height: 20px;
-    font-size: 20px;
-  }
-  .container-blog .quincena1 {
-    grid-column: 2/6;
-  }
-  .container-blog .quincena2 {
-    grid-column: 7/8;
-  }
-  .container-blog .quincena3 {
-    grid-column: 2/6;
-  }
-  .container-blog .quincena4 {
-    grid-column: 7/8;
-  }
-  .container-blog .quincena5 {
-    grid-column: 2/6;
-  }
-  .container-blog .quincena6 {
-    grid-column: 7/8;
-  }
-  .container-blog .move-1 {
-    grid-row: 5/6;
-  }
-  .container-blog .move-2 {
-    grid-row: 8/9;
-  }
-  .container-blog .image {
-    display: none;
-  }
-}
-.section1 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section1 h1 {
-  font-size: 20px;
-}
-
-.general-form .section2 {
-  width: 250px;
-  height: 150px;
-}
-.general-form .section2 img {
-  width: 100%;
-  height: 100%;
-}
-.general-form .section4 {
-  display: none;
-}
-
-footer {
-  height: 150px;
-}
-footer .access ul {
-  gap: 10px;
-}
-footer .access ul li {
-  width: 70px;
-  height: 30px;
-}
-footer .access ul li:first-child {
-  display: none;
-}
-footer .access ul li a {
-  font-size: 10px;
-}
-footer .socialMedia img {
-  width: 25px;
-  height: 23px;
-}
-footer .img-logo {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-  margin-bottom: 10px;
-}
-footer .img-logo img {
-  width: 35px;
-  height: 40px;
-}
-
 /* Ipad mini 768 x1024 */
 @media only screen and (min-width: 570px) and (max-width: 1300px) {
   .navBar {
@@ -1406,7 +1046,7 @@ footer .img-logo img {
   }
   .conteinerDos .buttoms button {
     width: 150px;
-    height: 40px;
+    height: 15px;
   }
   .conteinerDos .buttoms button a {
     font-size: 15px;
@@ -1489,7 +1129,6 @@ footer .img-logo img {
   }
   /* Blog*/
   .container-blog {
-    width: 100%;
     height: 800px;
   }
   .container-blog .card-size-blog {
@@ -1504,8 +1143,161 @@ footer .img-logo img {
     font-size: 20px;
     height: 20px;
   }
-  .container-blog .shadow {
-    box-shadow: none;
+  .container-blog .image {
+    grid-row: 3/7;
+    grid-column: 1/5;
+    margin-left: 20px;
+  }
+  .container-blog .move-1 {
+    grid-row: 6/7;
+  }
+  .container-blog .move-2 {
+    grid-row: 9/10;
+  }
+}
+/* Ipad mini 768 x1024 */
+@media only screen and (min-width: 570px) and (max-width: 1300px) {
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: none;
+    align-items: none;
+    gap: none;
+  }
+  .navBar li {
+    width: 92px;
+    height: 30px;
+  }
+  .navBar li a {
+    font-size: 15px;
+  }
+  .conteinerUno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  .conteinerUno .img img {
+    display: none;
+  }
+  .conteinerUno .imgtext h2, .conteinerUno .imgtext .conteinerDos .text p, .conteinerDos .text .conteinerUno .imgtext p {
+    font-size: 30px;
+  }
+  .conteinerUno .imgtext p {
+    font-size: 25px;
+  }
+  .conteinerDos {
+    height: 170px;
+  }
+  .conteinerDos .text {
+    width: 350px;
+    height: 150px;
+  }
+  .conteinerDos .text h2, .conteinerDos .text p {
+    font-size: 20px;
+  }
+  .conteinerDos .text p {
+    font-size: 15px;
+  }
+  .conteinerDos .buttoms button {
+    width: 150px;
+    height: 15px;
+  }
+  .conteinerDos .buttoms button a {
+    font-size: 15px;
+  }
+  .conteinerTres {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+  }
+  .conteinerTres .imgtextDos {
+    height: 300px;
+  }
+  .conteinerTres .imgtextDos img {
+    width: 500px;
+    height: 400px;
+    margin-top: 20px;
+  }
+  .conteinerTres .textDos {
+    width: 250px;
+    height: 50px;
+  }
+  .conteinerTres .textDos h2, .conteinerTres .textDos .conteinerDos .text p, .conteinerDos .text .conteinerTres .textDos p {
+    font-size: 20px;
+  }
+  .conteinerTres .card {
+    height: 100px;
+    margin: 50px 0;
+  }
+  .conteinerTres .card h2, .conteinerTres .card .conteinerDos .text p, .conteinerDos .text .conteinerTres .card p {
+    font-size: 10px;
+  }
+  .conteinerTres .card p {
+    display: none;
+  }
+  .conteinerTres .cards-group-uno {
+    display: flex;
+  }
+  .conteinerTres .cards-group-dos {
+    display: flex;
+  }
+  .conteinerCuatro {
+    display: flex;
+    margin-top: 150px;
+    height: 100px;
+    background-image: url(../assets/imagen/Back.jpg);
+  }
+  .conteinerCuatro .r-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conteinerCinco .textCinco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conteinerCinco .imgCinco img {
+    display: none;
+  }
+  footer {
+    height: 150px;
+  }
+  footer .access ul {
+    gap: 10px;
+  }
+  footer .access ul li {
+    width: 120px;
+    height: 30px;
+  }
+  footer .access ul li a {
+    font-size: 15px;
+  }
+  footer .socialMedia img {
+    width: 43px;
+    height: 41px;
+  }
+  footer .img-logo img {
+    width: 76px;
+    height: 86px;
+  }
+  /* Blog*/
+  .container-blog {
+    height: 800px;
+  }
+  .container-blog .card-size-blog {
+    width: 100px;
+    height: 10px;
+  }
+  .container-blog .card-size-blog img {
+    width: 100%;
+    height: 100px;
+  }
+  .container-blog .card-size-blog .h2-quin {
+    font-size: 20px;
+    height: 20px;
   }
   .container-blog .image {
     grid-row: 3/7;
@@ -1513,10 +1305,10 @@ footer .img-logo img {
     margin-left: 20px;
   }
   .container-blog .move-1 {
-    grid-row: 5/6;
+    grid-row: 6/7;
   }
   .container-blog .move-2 {
-    grid-row: 8/9;
+    grid-row: 9/10;
   }
 }
 
