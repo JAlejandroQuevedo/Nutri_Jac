@@ -35,14 +35,48 @@
     align-self: $self;
     margin-bottom: $margin;
 }
+@mixin flex-align-self($justify, $align, $self){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    align-self: $self;
+}
 @mixin flex-height($direction, $height){
     display: flex;
     flex-direction: $direction;
     height: $height;
 }
+@mixin flex-width($direction, $width){
+    display: flex;
+    flex-direction: $direction;
+    width: $width;
+}
+@mixin flex-height-2p($justify,$align, $height){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    height: $height;
+}
 @mixin height-row-gap($height, $gap){
     height: $height;
     gap: $gap;
+}
+//Grid
+@mixin column-rows-gap($column, $rows,$gap){
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $rows;
+    gap: $gap;
+}
+@mixin column-rows-gap-align-items($column, $rows,$align-items,$gap){
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $rows;
+    align-items: $align-items;
+    gap: $gap;
+}
+@mixin grid-row($row){
+    grid-row: $row;
 }
 @mixin box-4p($padding, $position, $top, $z-index){
     padding: $padding;
@@ -108,6 +142,11 @@
     height: $height;
     margin-top: $margin;
 }
+@mixin size-margin-bottom ($width, $height, $margin){
+    width: $width;
+    height: $height;
+    margin-bottom: $margin;
+}
 @mixin size-margin-right ($width, $height, $margin){
     width: $width;
     height: $height;
@@ -116,6 +155,26 @@
 @mixin size-back-border ($background, $width, $height, $radius){
     background-color: $background;
     width: $width;
+    height: $height;
+    border-radius: $radius;
+}
+@mixin size-back-border-color ($background, $color, $width, $height, $radius){
+    background-color: $background;
+    color: $color;
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}
+@mixin size-back-border-color-size ($background, $color, $width, $height, $radius, $size){
+    background-color: $background;
+    color: $color;
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    font-size: $size;
+}
+@mixin height-radius($back,$height, $radius){
+    background-color: $back;
     height: $height;
     border-radius: $radius;
 }
@@ -167,6 +226,10 @@
     margin-left: $left;
     margin-bottom: $bottom;
 }
+@mixin margin-2p-top($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
 @mixin height-margin($height, $margin){
     height: $height;
     margin-top: $margin;
@@ -187,6 +250,17 @@
 @mixin align-margin ($margin, $align){
     margin: $margin;
     text-align: $align;
+}
+@mixin margin-top-bottom-famlily($top, $bottom, $family){
+    margin-top: $top;
+    margin-bottom: $bottom;
+    font-family: $family;
+}
+@mixin margin-top-back-radius-height($back, $radius, $height, $top){
+    background-color: $back;
+    border-radius: $radius;
+    height: $height;
+    margin-top: $top;
 }
 @mixin background-image ($background){
     background-image: $background;
@@ -214,7 +288,16 @@
     color: $color;
     text-decoration: $decoration;
     font-size: $size;
-    
+}
+@mixin ancla-decoration-font ($family,$color, $decoration){
+    font-family: $family;
+    color: $color;
+    text-decoration: $decoration;
+}
+@mixin ancla-align-font ($size,$color, $align){
+    font-size: $size;
+    color: $color;
+    text-align: $align;
 }
 @mixin ancala-font($font, $color, $size, $decoration){
     font-family: $font;
@@ -239,6 +322,24 @@
     background-color: $back;
     margin-bottom: $margin;
 }
+@mixin family-size-back-color-radius-width($family, $size, $back, $radius, $width, $color){
+    font-family: $family;
+    font-size: $size;
+    background-color: $back;
+    border-radius: $radius;
+    width: $width;
+    color: $color;
+}
+@mixin family-size-back-color-radius-height($size,$align, $back,$border, $radius, $width,$height, $color){
+    font-size: $size;
+    text-align: $align;
+    background-color: $back;
+    border: $border;
+    border-radius: $radius;
+    width: $width;
+    height: $height;
+    color: $color;
+}
 @mixin responsive-margintop-height-background($margin, $height, $background){
     display: flex;
     margin-top: $margin;
@@ -250,9 +351,72 @@
     margin-top: $margin;
     height: $height;
 }
+@mixin background-size($back, $width, $height){
+    background-color: $back;
+    width: $width;
+    height: $height;
+}
+//Ya listos para ponerese
+@mixin h2-box{
+    font-size: 20px;
+    text-align: center;
+    text-justify: center;
+    margin-bottom: 20px;
+}
+@mixin p-box{
+    font-size: 16px;
+    text-align: center;
+    text-justify: center;
+}
 @mixin fixed{
     width: 50px;
     position: fixed;
     right: 4px;
     bottom: 0;
 }
+@mixin repeat-size{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@mixin border{
+    border: none;
+    border-bottom: 3px solid white;
+}
+@mixin input-format{
+    height: 20px;
+    text-align: center;
+}
+@mixin input-submit{
+    display: block;
+    margin: 1em auto;
+    background-color:#f24c27 ;
+    color: white;
+    height: 20px;
+}
+@mixin input-general{
+    border-radius: 20px;
+    width: 230px;
+    border: none;
+    background-color: #f24c27;
+    color: white;
+}
+@mixin input-hover{
+    border: solid 2px #148C3E;
+}
+@mixin fieldset{
+    border: 5px solid #148C3E;
+    border-radius: 20px;
+    width: 600px;
+}
+@mixin note{
+    background-color: #F24C27;
+    height: 200px;
+    grid-row: 4/5;
+    grid-column: 2/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+

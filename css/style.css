@@ -334,11 +334,11 @@ header .nav-wrapper nav .navBar li a {
   height: 100px;
   border-radius: 10px;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
   font-family: "Preahvihear", sans-serif;
   font-size: 13px;
   border: none;
-  background-color: #f24c27;
+  background-color: #F24C27;
   margin-bottom: 10px;
 }
 .form-textarea .personalized-1 {
@@ -353,51 +353,51 @@ header .nav-wrapper nav .navBar li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
   width: 100%;
+  height: 90px;
 }
 .back-section .back-log {
-  background-color: #148C3E;
-  grid-row: 12/13;
   display: flex;
-  align-items: center;
-  height: 40px;
-  width: 100px;
-  align-self: center;
   justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: #148C3E;
+  width: 100px;
+  height: 40px;
   border-radius: 20px;
+  grid-row: 12/13;
 }
 .back-section .back-log a {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 .conteiner-catalogo {
-  width: 100%;
-  height: 2000px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   gap: 20px;
+  width: 100%;
+  height: 2000px;
 }
 
 .h1-conteiner-dimension {
-  grid-row: 1/2;
-  grid-column: 5/10;
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-row: 1/2;
+  grid-column: 5/10;
 }
 
 .h1-conteiner-dimension h1 {
-  background-color: #148C3E;
-  color: white;
-  height: 50px;
-  width: 300px;
-  border-radius: 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  background-color: #148C3E;
+  color: #FFFFFF;
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
   font-size: 30px;
 }
 
@@ -415,18 +415,18 @@ header .nav-wrapper nav .navBar li a {
 
 .h2-quin {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
   background-color: #148C3E;
   border-radius: 20px;
   height: 40px;
+  margin-top: 20px;
 }
 
 .a-style {
-  color: white;
-  text-decoration: none;
   font-family: "Preahvihear", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .quincena2 {
@@ -513,9 +513,9 @@ header .nav-wrapper nav .navBar li a {
 }
 
 .note p {
-  text-align: center;
   font-size: 25px;
-  color: white;
+  color: #FFFFFF;
+  text-align: none;
 }
 
 .list {
@@ -530,32 +530,32 @@ header .nav-wrapper nav .navBar li a {
 }
 
 .general-form {
+  background-color: #F2F2F2;
   width: 100%;
   height: 900px;
-  background-color: #F2F2F2;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  gap: 20px;
   align-items: center;
+  gap: 20px;
 }
 .general-form .section1 {
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100px;
   grid-column: 1/9;
 }
 .general-form .section1 h1 {
-  font-size: 40px;
-  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: none;
   font-family: "Preahvihear", sans-serif;
-  color: white;
+  font-size: 40px;
   background-color: #148C3E;
   border-radius: 10px;
   width: 400px;
-  display: flex;
-  justify-content: center;
+  color: #FFFFFF;
 }
 .general-form .section2 {
   grid-column: 3/4;
@@ -568,20 +568,22 @@ header .nav-wrapper nav .navBar li a {
   background-size: cover;
 }
 .general-form .section3 {
-  background-color: #D9D9D9;
-  grid-column: 2/5;
-  grid-row: 3/7;
-  border-radius: 20px;
-  height: 285px;
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
   justify-content: center;
   align-items: center;
+  gap: none;
+  background-color: #D9D9D9;
+  height: 285px;
+  border-radius: 20px;
+  grid-column: 2/5;
+  grid-row: 3/7;
 }
 .general-form .section3 h2, .general-form .section3 .conteinerDos .text p, .conteinerDos .text .general-form .section3 p {
-  font-family: "Preahvihear", sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: "Preahvihear", sans-serif;
 }
 .general-form .section3 form {
   display: flex;
@@ -650,17 +652,19 @@ header .nav-wrapper nav .navBar li a {
 }
 
 .section4 {
-  background-color: #f24c27;
-  border-radius: 20px;
+  background-color: #F24C27;
+  color: #FFFFFF;
   width: 400px;
   height: 200px;
-  grid-column: 5/8;
-  grid-row: 2/4;
-  color: white;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
   justify-content: center;
   align-items: center;
+  gap: none;
+  grid-column: 5/8;
+  grid-row: 2/4;
 }
 .section4 h2, .section4 .conteinerDos .text p, .conteinerDos .text .section4 p {
   font-size: 20px;
@@ -668,7 +672,7 @@ header .nav-wrapper nav .navBar li a {
   text-justify: center;
   margin-bottom: 20px;
 }
-.section4 h2 p, .section4 .conteinerDos .text p p, .conteinerDos .text .section4 p p {
+.section4 p {
   font-size: 16px;
   text-align: center;
   text-justify: center;
@@ -729,90 +733,88 @@ header .nav-wrapper nav .navBar li a {
 .main-label form .log-in-fieldset .log-in {
   width: 100%;
   height: 750px;
-  /* background-color: gray; */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   gap: 20px;
 }
 .main-label form .log-in-fieldset .log-in .imge-log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 5/9;
   grid-row: 2/7;
-  /* background-color: chocolate; */
-  display: flex;
-  justify-content: center;
-  align-self: center;
 }
 .main-label form .log-in-fieldset .log-in .imge-log img {
-  background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 10px;
-  height: 300px;
+  background-size: cover;
   width: 200px;
+  height: 300px;
+  margin-bottom: 10px;
 }
 .main-label form .log-in-fieldset .log-in .label-log {
-  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 4/10;
   grid-row: 7/8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .main-label form .log-in-fieldset .log-in .input-log {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
   grid-column: 4/10;
   grid-row: 8/9;
-  display: flex;
-  justify-content: center;
 }
 .main-label form .log-in-fieldset .log-in .input-log input {
+  font-size: 17px;
+  text-align: center;
+  background-color: #F24C27;
+  border: none;
+  border-radius: 20px;
   width: 500px;
   height: 100%;
-  border-radius: 20px;
-  text-align: center;
-  border: none;
-  background-color: #F24C27;
-  color: white;
-  font-size: 17px;
+  color: #FFFFFF;
 }
 .main-label form .log-in-fieldset .log-in .input-log input:hover {
-  border: 0.125rem solid #148C3E;
+  border: solid 2px #148C3E;
 }
 .main-label form .log-in-fieldset .log-in .label-log-p {
-  /* background-color: gold; */
-  grid-column: 4/10;
-  grid-row: 9/10;
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: 4/10;
+  grid-row: 9/10;
 }
 .main-label form .log-in-fieldset .log-in .input-log-p-p {
-  /* background-color: greenyellow; */
-  grid-column: 4/10;
-  grid-row: 10/11;
   display: flex;
   justify-content: center;
+  align-items: none;
+  grid-column: 4/10;
+  grid-row: 10/11;
 }
 .main-label form .log-in-fieldset .log-in .input-log-p-p input {
+  font-size: 17px;
+  text-align: center;
+  background-color: #F24C27;
+  border: none;
+  border-radius: 20px;
   width: 500px;
   height: 100%;
-  border-radius: 20px;
-  text-align: center;
-  border: none;
-  background-color: #F24C27;
-  color: white;
-  font-size: 17px;
+  color: #FFFFFF;
 }
 .main-label form .log-in-fieldset .log-in .input-log-p-p input:hover {
-  border: 0.125rem solid #148C3E;
+  border: solid 2px #148C3E;
 }
 .main-label form .log-in-fieldset .log-in .tex-log {
-  /* background-color: blueviolet; */
   grid-column: 4/10;
   grid-row: 12/13;
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
   justify-content: center;
   align-items: center;
+  gap: none;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -824,11 +826,10 @@ header .nav-wrapper nav .navBar li a {
   grid-row: 11/12;
 }
 .main-label form .log-in-fieldset .log-in .submit-log input {
+  background-color: #F24C27;
+  color: #FFFFFF;
   width: 100%;
   height: 100%;
-  border: none;
-  color: white;
-  background-color: #F24C27;
   border-radius: 20px;
 }
 
@@ -1088,6 +1089,12 @@ header .nav-wrapper nav .navBar li a {
   .container-blog {
     height: 700px;
   }
+  .container-blog .h1-conteiner-dimension {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+  }
   .container-blog .card-size-blog {
     width: 80px;
     height: 10px;
@@ -1103,11 +1110,20 @@ header .nav-wrapper nav .navBar li a {
   .container-blog .quincena1 {
     grid-column: 2/6;
   }
+  .container-blog .quincena2 {
+    grid-column: 7/8;
+  }
   .container-blog .quincena3 {
     grid-column: 2/6;
   }
+  .container-blog .quincena4 {
+    grid-column: 7/8;
+  }
   .container-blog .quincena5 {
     grid-column: 2/6;
+  }
+  .container-blog .quincena6 {
+    grid-column: 7/8;
   }
   .container-blog .move-1 {
     grid-row: 5/6;

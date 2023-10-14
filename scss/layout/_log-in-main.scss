@@ -1,0 +1,13 @@
+.back-section{
+    @include flex-5p(center, center);
+    @include size(100%,90px);
+    .back-log{
+        @include flex-align-self(center, center, center);
+        @include size-back-border($bg-boton-verde, 100px, 40px, 20px);
+        // @include grid-row(12/13);
+        grid-row: 12/13;
+        a{
+            @include ancla-color-decortarion($color-caja, none);
+        }
+    }
+}

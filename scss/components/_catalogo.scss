@@ -1,29 +1,15 @@
 .conteiner-catalogo{
-    width: 100%;
-    height: 2000px;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(12,1fr);
-    gap: 20px;
+    @include column-rows-gap(repeat(12,1fr),repeat(12,1fr), 20px);
+    @include size (100%, 2000px);
 }
 .h1-conteiner-dimension{
+    @include flex-5p(center, center);
     grid-row: 1/2;
-    grid-column: 5/10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-column: 5/10;  
 }
 .h1-conteiner-dimension h1{
-    background-color: #148C3E;
-    color: white;
-    height: 50px;
-    width: 300px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-
+    @include flex-5p(center, center);
+    @include size-back-border-color-size($bg-boton-verde, $color-caja, 300px, 50px, 20px,30px);
 }
 .quincena1{
     grid-row: 2/3;
@@ -31,23 +17,14 @@
     height: 300px;
 }
 .img-quni{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    @include size-radius(100%,100%, 20px);
 }
 .h2-quin{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    background-color: #148C3E;
-    border-radius: 20px;
-    height: 40px;
+    @include flex-5p(center, center);
+    @include margin-top-back-radius-height($bg-boton-verde, 20px, 40px, 20px);
 }
 .a-style{
-    color: white;
-    text-decoration: none;
-    font-family: 'Preahvihear', sans-serif ;
+    @include ancla-decoration-font($encabezado-frase, $color-caja, none);
 }
 .quincena2{
     grid-row: 2/3;
@@ -55,9 +32,7 @@
     height: 300px;
 }
 .quincena2 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    @include size-radius(100%, 100%, 20px);
 }
 .quincena3{
     grid-row: 4/5;
@@ -65,9 +40,7 @@
     height: 300px;
 }
 .quincena3 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    @include size-radius(100%, 100%, 20px);
 }
 .quincena4{
     grid-row: 4/5;
@@ -75,9 +48,7 @@
     height: 300px;
 }
 .quincena4 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    @include size-radius(100%, 100%, 20px);
 }
 .quincena5{
     grid-row: 6/7;
@@ -85,9 +56,7 @@
     height: 300px;
 }
 .quincena5 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    @include size-radius(100%, 100%, 20px);
 }
 .quincena6{
     grid-row: 6/7;
@@ -95,34 +64,20 @@
     height: 300px;
 }
 .quincena6 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    @include size-radius(100%, 100%, 20px);
 }
 .image{
     grid-column: 2/6;
     grid-row: 2/4;
 }
 .image img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    @include size-radius(100%, 100%, 20px);
 }
 .note{
-    background-color: #F24C27;
-    height: 200px;
-    grid-row: 4/5;
-    grid-column: 2/6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    margin-top: 50px;
+    @include note;
 }
 .note p{
-    text-align: center;
-    font-size: 25px;
-    color: white;
+    @include ancla-align-font(25px,$color-caja, none);
 
 }
 .list{
@@ -130,7 +85,5 @@
     grid-row: 8/11;
 }
 .list img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    @include size-radius(100%, 100%, 20px);
 }

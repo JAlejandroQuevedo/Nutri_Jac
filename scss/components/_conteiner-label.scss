@@ -1,101 +1,58 @@
 .main-label{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-4p(column, center);
     margin: 50px auto;
     form{
         .log-in-fieldset{
-            border: 5px solid #148C3E;
-            border-radius: 20px;
-            width: 600px;
+            @include fieldset;
             .log-in{
-                width: 100%;
-                height: 750px;
-                /* background-color: gray; */
-                display: grid;
-                grid-template-columns: repeat(12,1fr);
-                grid-template-rows: repeat(12,1fr);
-                gap: 20px;
+                @include size (100%, 750px);
+                @include column-rows-gap(repeat(12,1fr),repeat(12,1fr),20px);
                 .imge-log{
+                    @include flex-5p(center, center);
                     grid-column: 5/9;
                     grid-row: 2/7;
-                    /* background-color: chocolate; */
-                    display: flex;
-                    justify-content: center;
-                    align-self: center;
                     img{
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        margin-bottom: 10px;
-                        height: 300px;
-                        width: 200px;
+                        @include repeat-size;
+                        @include size-margin-bottom(200px, 300px, 10px);
                     }
                 }
                 .label-log{
-                    /* background-color: blue; */
+                    @include flex-5p(center, center);
                     grid-column: 4/10;
                     grid-row: 7/8;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                 }
                 .input-log{
+                    @include flex-3p(none, center);
                     grid-column: 4/10;
                     grid-row: 8/9;
-                    display: flex;
-                    justify-content: center;
                     input{
-                        width: 500px;
-                        height: 100%;
-                        border-radius: 20px;
-                        text-align: center;
-                        border: none;
-                        background-color: #F24C27;
-                        color: white;
-                        font-size: 17px;
+                        @include family-size-back-color-radius-height(17px, center, $bg-boton-naranja, none, 20px, 500px, 100%, $color-caja);
                         &:hover{
-                            border: .125rem solid #148C3E ;
+                            @include input-hover;
                         }
                     }
                 }
                 .label-log-p{
-                    /* background-color: gold; */
+                    @include flex-5p(center, center);
                     grid-column: 4/10;
                     grid-row: 9/10;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                 }
                 .input-log-p-p{
-                    /* background-color: greenyellow; */
+                    @include flex-5p(center, none);
                     grid-column: 4/10;
                     grid-row: 10/11;
-                    display: flex;
-                    justify-content: center;
                     input{
-                        width: 500px;
-                        height: 100%;
-                        border-radius: 20px;
-                        text-align: center;
-                        border: none;
-                        background-color: #F24C27;
-                        color: white;
-                        font-size: 17px;
+                        @include family-size-back-color-radius-height(17px, center, $bg-boton-naranja, none, 20px, 500px, 100%, $color-caja);   
                         &:hover{
-                            border: .125rem solid #148C3E ;
+                            @include input-hover;
                         }
                     }
                 }
                 .tex-log{
-                    /* background-color: blueviolet; */
                     grid-column: 4/10;
                     grid-row: 12/13;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 50px;
-                    margin-bottom: 50px;
+                    @include flex(column,none, center, center, none);
+                    @include margin-2p-top(50px, 50px);
                     a{
                         color: black;
                     }
@@ -104,12 +61,7 @@
                     grid-column: 6/8;
                     grid-row: 11/12;
                     input{
-                        width: 100%;
-                        height: 100%;
-                        border: none;
-                        color: white;
-                        background-color: #F24C27;
-                        border-radius: 20px;
+                        @include size-back-border-color($bg-boton-naranja, $color-caja, 100%, 100%, 20px);
                     }
                 }
             }

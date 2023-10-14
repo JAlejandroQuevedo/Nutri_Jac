@@ -168,6 +168,10 @@
     /* Blog*/
     .container-blog{
         height: 700px;
+        .h1-conteiner-dimension{
+            @include flex-5p(center, center);
+            width: 100px;
+        }
         .card-size-blog{
             @include size (80px, 10px);
             img{
@@ -181,11 +185,20 @@
         .quincena1 {
             grid-column: 2/6;
         }
+        .quincena2{
+            grid-column: 7/8;
+        }
         .quincena3{
             grid-column: 2/6;
         }
+        .quincena4{
+            grid-column: 7/8;
+        }
         .quincena5{
             grid-column: 2/6;
+        }
+        .quincena6{
+            grid-column: 7/8;
         }
         .move-1{
             grid-row: 5/6;
