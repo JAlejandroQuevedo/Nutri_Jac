@@ -54,7 +54,7 @@
                     @include flex(column,none, center, center, none);
                     @include margin-2p-top(50px, 50px);
                     a{
-                        color: black;
+                        color: $color-general
                     }
                 }
                 .submit-log{

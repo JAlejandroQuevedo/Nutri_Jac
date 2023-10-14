@@ -592,7 +592,7 @@ header .nav-wrapper nav .navBar li a {
 }
 .general-form .section3 form fieldset {
   border: none;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #FFFFFF;
 }
 .general-form .section3 form fieldset .label-1 {
   height: 50px;
@@ -612,8 +612,8 @@ header .nav-wrapper nav .navBar li a {
 .general-form .section3 form input[type=submit] {
   display: block;
   margin: 1em auto;
-  background-color: #f24c27;
-  color: white;
+  background-color: #F24C27;
+  color: #FFFFFF;
   height: 20px;
 }
 .general-form .section3 form input[type=text] {
@@ -640,8 +640,8 @@ header .nav-wrapper nav .navBar li a {
   border-radius: 20px;
   width: 230px;
   border: none;
-  background-color: #f24c27;
-  color: white;
+  background-color: #F24C27;
+  color: #FFFFFF;
 }
 .general-form .section3 form input:hover {
   border: solid 2px #148C3E;
@@ -819,7 +819,7 @@ header .nav-wrapper nav .navBar li a {
   margin-bottom: 50px;
 }
 .main-label form .log-in-fieldset .log-in .tex-log a {
-  color: black;
+  color: #000000;
 }
 .main-label form .log-in-fieldset .log-in .submit-log {
   grid-column: 6/8;

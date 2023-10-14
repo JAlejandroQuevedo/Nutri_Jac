@@ -380,7 +380,7 @@
 }
 @mixin border{
     border: none;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid $color-caja;
 }
 @mixin input-format{
     height: 20px;
@@ -389,27 +389,27 @@
 @mixin input-submit{
     display: block;
     margin: 1em auto;
-    background-color:#f24c27 ;
-    color: white;
+    background-color:$bg-boton-naranja ;
+    color: $color-caja;
     height: 20px;
 }
 @mixin input-general{
     border-radius: 20px;
     width: 230px;
     border: none;
-    background-color: #f24c27;
-    color: white;
+    background-color: $bg-boton-naranja ;
+    color: $color-caja
 }
 @mixin input-hover{
-    border: solid 2px #148C3E;
+    border: solid 2px $bg-boton-verde;
 }
 @mixin fieldset{
-    border: 5px solid #148C3E;
+    border: 5px solid $bg-boton-verde;
     border-radius: 20px;
     width: 600px;
 }
 @mixin note{
-    background-color: #F24C27;
+    background-color: $bg-boton-naranja ;
     height: 200px;
     grid-row: 4/5;
     grid-column: 2/6;
