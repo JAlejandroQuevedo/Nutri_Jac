@@ -137,41 +137,124 @@
     .new-section{
         @include none;
     }
-    footer{
-        height: 150px;
-        .access {
-            ul{
-                gap: 10px;
-                li{
-                    @include size(70px, 30px);
-                    &:first-child{
-                        @include none;
-                    }
-                    a{
-                        font-size: 10px;
-                    }
-                }
+    main{
+        .h1-conteiner-dimension{
+            @include flex-5p(center, center);
+            margin-top: 40px;
+            width: 100%;
+            h1{
+                font-size: 20px;
+                text-align: center;
             }
         }
-        .socialMedia {
+    }
+    //CATALOGO DE DIETAS
+    .conteiner-catalogo{
+        height: 700px;
+        .card-size-blog{
+            @include size (80px, 10px);
             img{
-                @include size(25px, 23px);
+                @include size (100%, 100px);
+                
+            }
+            .h2-quin{
+                @include size-height(20px, 20px);
+                font-size: 10px;
             }
         }
-        .img-logo{
-            @include flex-align-self-margin(column, flex-end, 10px);
-            img{
-                @include size(35px, 40px);
-            }
+        .quincena1 {
+            grid-column: 2/6;
+            box-shadow: none;
         }
-    } 
+        .quincena2{
+            grid-column: 10/11;
+            box-shadow: none;
+        }
+        .quincena3{
+            grid-column: 2/6;
+            box-shadow: none;
+        }
+        .quincena4{
+            grid-column: 10/11;
+            box-shadow: none;
+        }
+        .quincena5{
+            grid-column: 2/6;
+        }
+        .quincena6{
+            grid-column: 10/11;
+            box-shadow: none;
+        }
+        .move-1{
+            grid-row: 5/6;
+            box-shadow: none;
+        }
+        .move-2{
+            grid-row: 8/9;
+            box-shadow: none;
+        }
+        .list{
+            @include none;
+        }
+        .image{
+            display: none;
+        }
+    }
+//Productos
+.change-product{
+    height: 700px;
+    .card-size-blog{
+        @include size (80px, 10px);
+        img{
+            @include size (100%, 100px);
+            
+        }
+        .h2-quin{
+            @include size-height(20px, 20px);
+            font-size: 10px;
+        }
+    }
+    .quincena1 {
+        grid-column: 2/6;
+        box-shadow: none;
+    }
+    .quincena2{
+        grid-column: 7/8;
+        box-shadow: none;
+    }
+    .quincena3{
+        grid-column: 2/6;
+        box-shadow: none;
+    }
+    .quincena4{
+        grid-column: 7/8;
+        box-shadow: none;
+    }
+    .quincena5{
+        grid-column: 2/6;
+    }
+    .quincena6{
+        grid-column: 7/8;
+        box-shadow: none;
+    }
+    .move-1{
+        grid-row: 5/6;
+        box-shadow: none;
+    }
+    .move-2{
+        grid-row: 8/9;
+        box-shadow: none;
+    }
+    .list{
+        @include none;
+    }
+    .image{
+        display: none;
+    }
+}
     /* Blog*/
     .container-blog{
         height: 700px;
-        .h1-conteiner-dimension{
-            @include flex-5p(center, center);
-            width: 100px;
-        }
         .card-size-blog{
             @include size (80px, 10px);
             img{
@@ -211,3 +294,50 @@
         }
     }
 }
+//FORMS
+.section1{
+    width: 100%;
+    @include flex-5p(center, center);
+    h1{
+        font-size: 20px;
+    }
+}   
+.general-form{
+    .section2{
+        @include size(250px, 150px);
+        img{
+            @include size(100%, 100%);
+        }
+    }
+    .section4{
+        @include none;
+    }
+}
+footer{
+    height: 150px;
+    .access {
+        ul{
+            gap: 10px;
+            li{
+                @include size(70px, 30px);
+                &:first-child{
+                    @include none;
+                }
+                a{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .socialMedia {
+        img{
+            @include size(25px, 23px);
+        }
+    }
+    .img-logo{
+        @include flex-align-self-margin(column, flex-end, 10px);
+        img{
+            @include size(35px, 40px);
+        }
+    }
+} 
