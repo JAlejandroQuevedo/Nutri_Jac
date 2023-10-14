@@ -2,6 +2,8 @@
     @include size-padding-margin-margin(290px, 350px, 0px 20px, 70px);
     img{
         @include width-radius(100%, 20px);
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+        border-radius: 10px;
     }
     h2{
         @include font-property-margin-top($encabezado-frase, center, 20px, 0.5px, 10px);

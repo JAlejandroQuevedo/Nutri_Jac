@@ -6,6 +6,9 @@
 
 html {
   background-color: #F2F2F2;
+}
+
+html {
   font-family: "Inika", serif;
 }
 
@@ -914,6 +917,8 @@ header .nav-wrapper nav .navBar li a:active {
 .card img {
   width: 100%;
   border-radius: 20px;
+  box-shadow: 5px 5px 8px #F24C27;
+  border-radius: 10px;
 }
 .card h2, .card .conteinerDos .text p, .conteinerDos .text .card p {
   font-family: "Preahvihear", sans-serif;
@@ -992,7 +997,7 @@ header .nav-wrapper nav .navBar li a:active {
   text-align: center;
 }
 
-@media (min-width: 300px) and (max-width: 768px) {
+@media (min-width: 350px) and (max-width: 768px) {
   header .nav-wrapper nav #toggle:checked ~ .menu {
     height: 100%;
   }
