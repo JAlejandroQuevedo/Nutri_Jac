@@ -650,6 +650,7 @@ header .nav-wrapper nav .navBar li a:active {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: "Preahvihear", sans-serif;
+  text-align: center;
 }
 .general-form .section3 form {
   display: flex;
@@ -1310,6 +1311,65 @@ header .nav-wrapper nav .navBar li a:active {
     grid-row: 8/9;
   }
   .change-product .image {
+    display: none;
+  }
+  .general-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 750px;
+  }
+  .general-form .section1 {
+    width: 350px;
+  }
+  .general-form .section1 h1 {
+    font-size: 30px;
+  }
+  .general-form .section2 {
+    width: 250px;
+    height: 150px;
+  }
+  .general-form .section2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .general-form .section3 {
+    width: 90%;
+    height: 450px;
+  }
+  .general-form .section3 form {
+    width: 100%;
+    height: 100%;
+  }
+  .general-form .section3 form fieldset {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 50px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .general-form .section3 form fieldset .label-1 {
+    grid-row: 1/2;
+    text-align: center;
+  }
+  .general-form .section3 form fieldset .time-date {
+    grid-row: 3/4;
+    text-align: center;
+  }
+  .general-form .section3 form fieldset .contact-date {
+    grid-row: 4/5;
+    text-align: center;
+  }
+  .general-form .section3 form fieldset .input-1 {
+    grid-row: 6/7;
+  }
+  .general-form .section3 label {
+    text-align: center;
+  }
+  .general-form .section4 {
     display: none;
   }
 }

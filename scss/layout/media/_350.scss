@@ -298,5 +298,57 @@
             display: none;
         }
     }
-    
+    //ACTIVACION FISICA
+    .general-form{
+        @include flex-5p(center, center);
+        flex-direction: column;
+        height: 750px;
+        .section1{
+            width: 350px;
+            h1{
+                font-size: 30px;
+            }
+        }
+        .section2{
+            @include size(250px, 150px);
+            img{
+                @include size(100%, 100%);
+            }
+        }
+        .section3{
+            @include size(90%, 450px);
+            form{
+                @include size(100%, 100%);  
+                fieldset{
+                    @include size (100%, 100%);
+                    border: none;
+                    margin-left: 50px;
+                    display: grid;
+                    grid-template-rows: repeat(10,1fr);
+                    grid-template-columns: repeat(2,1fr);
+                    .label-1{
+                        grid-row: 1/2;
+                        text-align: center;
+                    }
+                    .time-date{
+                        grid-row: 3/4;
+                        text-align: center;
+                    }
+                    .contact-date{
+                        grid-row: 4/5;
+                        text-align: center;
+                    }
+                    .input-1{
+                        grid-row: 6/7;
+                    }
+                }
+            }
+            label{
+                text-align: center
+            }
+        }
+        .section4{
+            @include none;
+        }
+    }
 }

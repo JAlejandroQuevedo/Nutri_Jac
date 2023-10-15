@@ -25,6 +25,7 @@
         box-shadow: 5px 5px 8px $bg-navBar-footer;    
         h2{
             @include margin-top-bottom-famlily(20px, 20px,$encabezado-frase);
+            text-align: center
         }
         form{
             @include flex-width(column, 700px);
