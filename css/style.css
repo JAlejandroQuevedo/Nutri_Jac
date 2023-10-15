@@ -1375,26 +1375,31 @@ header .nav-wrapper nav .navBar li a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    width: 100%;
     height: 650px;
+    margin-top: 2px;
+    flex-direction: column;
   }
   .register-general .logo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .register-general .logo-img .logo-register {
     width: 100px;
     height: 150px;
   }
-  .register-general .logo-img img {
-    width: 100%;
-    height: 100%;
-  }
-  .register-general .section3 {
+  .register-general .register {
     width: 90%;
     height: 450px;
+    margin-bottom: 10px;
   }
-  .register-general .section3 form {
+  .register-general .register form {
     width: 100%;
     height: 100%;
   }
-  .register-general .section3 form fieldset {
+  .register-general .register form fieldset {
     width: 100%;
     height: 100%;
     border: none;
@@ -1403,25 +1408,25 @@ header .nav-wrapper nav .navBar li a:active {
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(2, 1fr);
   }
-  .register-general .section3 form fieldset .label-1 {
+  .register-general .register form fieldset .label-1 {
     grid-row: 1/2;
     text-align: center;
   }
-  .register-general .section3 form fieldset .time-date {
+  .register-general .register form fieldset .time-date {
     grid-row: 3/4;
     text-align: center;
   }
-  .register-general .section3 form fieldset .password {
+  .register-general .register form fieldset .password {
     grid-row: 4/5;
   }
-  .register-general .section3 form fieldset .contact-date {
+  .register-general .register form fieldset .contact-date {
     grid-row: 5/6;
     text-align: center;
   }
-  .register-general .section3 form fieldset .input-1 {
+  .register-general .register form fieldset .input-1 {
     grid-row: 7/8;
   }
-  .register-general .section3 label {
+  .register-general .register label {
     text-align: center;
   }
   .register-general .section4 {
@@ -1491,6 +1496,33 @@ header .nav-wrapper nav .navBar li a:active {
   }
   .form-textarea .section4 {
     display: none;
+  }
+  .form-personlized .personalized-1 {
+    height: 700px;
+  }
+  .form-personlized .personalized-1 .personalized {
+    grid-row: 7/8;
+  }
+  .form-personlized .personalized-1 .personalized textarea {
+    width: 250px;
+    height: 100px;
+  }
+  .log-in-box .main-label {
+    width: 100%;
+  }
+  .log-in-box .main-label form {
+    width: 90%;
+    height: 50%;
+  }
+  .log-in-box .main-label form .log-in-fieldset {
+    width: 100%;
+  }
+  .log-in-box .main-label form .log-in-fieldset .imge-log {
+    width: 150px;
+  }
+  .log-in-box .main-label form .log-in-fieldset .imge-log img {
+    width: 100%;
+    height: 200px;
   }
 }
 /* Ipad mini 768 x1024 */

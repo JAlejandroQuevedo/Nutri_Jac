@@ -353,16 +353,19 @@
     }
     .register-general{
         @include flex-5p(center, center);
+        @include size(100%, 650px); 
+        margin-top: 2px;
         flex-direction: column;
-        height: 650px;
         .logo-img{
-            @include size(100px, 150px);
-            img{
-                @include size(100%, 100%);
+            @include flex-5p(center, center);
+            width: 100%;
+            .logo-register{
+                @include size(100px, 150px);
             }
         }
-        .section3{
+        .register{
             @include size(90%, 450px);
+            margin-bottom:10px;
             form{
                 @include size(100%, 100%);  
                 fieldset{
@@ -458,6 +461,35 @@
         }
         .section4{
             @include none;
+        }
+    }
+    .form-personlized{
+        .personalized-1{
+            height: 700px;
+            .personalized{
+                grid-row: 7/8;
+                textarea{
+                    @include size (250px, 100px);
+                }
+            }
+        }
+    }
+    //LOG IN
+    .log-in-box{
+        .main-label{
+            width: 100%;
+            form{
+                @include size(90%,50%);
+                .log-in-fieldset{
+                    width: 100%;
+                    .imge-log{
+                        width: 150px;
+                        img{
+                            @include size (100%, 200px);
+                        }
+                    }
+                }
+            }
         }
     }
 }
