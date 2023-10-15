@@ -1,16 +1,17 @@
+.h1-conteiner-dimension{
+    @include flex-5p(center, center);
+    grid-row: 1/2;
+    grid-column: 5/10;  
+    margin-top: 40px;
+    h1{
+        @include flex-5p(center, center);
+        @include size-back-border-color-size($bg-boton-verde, $color-caja, 300px, 50px, 20px,30px);
+        box-shadow: 5px 5px 8px $bg-boton-naranja;
+    }
+}
 .conteiner-catalogo{
     @include column-rows-gap(repeat(12,1fr),repeat(12,1fr), 20px);
     @include size (100%, 2000px);
-    .h1-conteiner-dimension{
-        @include flex-5p(center, center);
-        grid-row: 1/2;
-        grid-column: 5/10;  
-        h1{
-            @include flex-5p(center, center);
-            @include size-back-border-color-size($bg-boton-verde, $color-caja, 300px, 50px, 20px,30px);
-            box-shadow: 5px 5px 8px $bg-boton-naranja;
-        }
-    }
     .quincena1{
         grid-row: 2/3;
         grid-column: 6/8;
