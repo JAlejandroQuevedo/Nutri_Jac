@@ -659,7 +659,6 @@ header .nav-wrapper nav .navBar li a:active {
 }
 .general-form .section3 form fieldset {
   border: none;
-  border-bottom: 3px solid #FFFFFF;
 }
 .general-form .section3 form fieldset .label-1 {
   height: 50px;
@@ -1370,6 +1369,127 @@ header .nav-wrapper nav .navBar li a:active {
     text-align: center;
   }
   .general-form .section4 {
+    display: none;
+  }
+  .register-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 650px;
+  }
+  .register-general .logo-img {
+    width: 100px;
+    height: 150px;
+  }
+  .register-general .logo-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .register-general .section3 {
+    width: 90%;
+    height: 450px;
+  }
+  .register-general .section3 form {
+    width: 100%;
+    height: 100%;
+  }
+  .register-general .section3 form fieldset {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 50px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .register-general .section3 form fieldset .label-1 {
+    grid-row: 1/2;
+    text-align: center;
+  }
+  .register-general .section3 form fieldset .time-date {
+    grid-row: 3/4;
+    text-align: center;
+  }
+  .register-general .section3 form fieldset .password {
+    grid-row: 4/5;
+  }
+  .register-general .section3 form fieldset .contact-date {
+    grid-row: 5/6;
+    text-align: center;
+  }
+  .register-general .section3 form fieldset .input-1 {
+    grid-row: 7/8;
+  }
+  .register-general .section3 label {
+    text-align: center;
+  }
+  .register-general .section4 {
+    display: none;
+  }
+  .form-textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .form-textarea .section-large .large {
+    font-size: 20px;
+  }
+  .form-textarea .section2 {
+    width: 300px;
+    height: 200px;
+  }
+  .form-textarea .section2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .form-textarea .textarea-1 {
+    width: 90%;
+    height: 550px;
+    margin-bottom: 10px;
+  }
+  .form-textarea .textarea-1 form {
+    width: 100%;
+    height: 100%;
+  }
+  .form-textarea .textarea-1 form fieldset {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 50px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-textarea .textarea-1 form fieldset .label-1 {
+    grid-row: 1/2;
+    text-align: center;
+  }
+  .form-textarea .textarea-1 form fieldset .time-date {
+    grid-row: 3/4;
+    text-align: center;
+  }
+  .form-textarea .textarea-1 form fieldset .affair {
+    grid-row: 4/5;
+    margin-top: 40px;
+  }
+  .form-textarea .textarea-1 form fieldset .affair textarea {
+    width: 250px;
+    height: 100px;
+  }
+  .form-textarea .textarea-1 form fieldset .contact-date {
+    grid-row: 5/6;
+    text-align: center;
+  }
+  .form-textarea .textarea-1 form fieldset .input-1 {
+    grid-row: 8/9;
+  }
+  .form-textarea .textarea-1 label {
+    text-align: center;
+  }
+  .form-textarea .section4 {
     display: none;
   }
 }

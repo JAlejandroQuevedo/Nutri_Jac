@@ -30,7 +30,7 @@
         form{
             @include flex-width(column, 700px);
             fieldset{
-                @include border;
+                border: none;
                 .label-1{
                     height: 50px;
                     font-family:'Inika', serif;
