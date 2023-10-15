@@ -141,4 +141,94 @@
             grid-row: 9/10;
         }
     }
+    .conteiner-catalogo{
+        height: 700px;
+        .card-size-blog{
+            @include size(100px, 10px);
+            box-shadow: none;
+            img{
+                @include size (100%, 100px);
+            }
+            .h2-quin{
+                font-size: 15px;
+                height: 20px;
+            }
+        }
+        .image-n{
+            grid-column: 1/5;
+            grid-row:2/3 ;
+            height: 150px;
+            margin-left: 20px;
+        }
+        .note{
+            grid-row: 3/4;
+            grid-column: 1/5;
+            margin-left: 20px;
+            height: 150px;
+            p{
+                font-size: 15px;
+            }
+        }
+        .move-1{
+            grid-row: 3/4;
+        }
+        .move-2{
+            grid-row: 4/5;
+        }
+        .list-move{
+            grid-row: 4/5;
+            grid-column: 1/5;
+            margin-left: 20px;
+            height: 150px;
+            width: 250px;
+            .h2-quin{
+                font-size: 15px;
+            }
+        }
+    }
+    .change-product{
+        height: 700px;
+        .card-size-blog{
+            @include size(100px, 10px);
+            box-shadow: none;
+            img{
+                @include size (100%, 100px);
+            }
+            .h2-quin{
+                font-size: 15px;
+                height: 20px;
+            }
+        }
+        .image-n{
+            grid-column: 1/5;
+            grid-row:2/3 ;
+            height: 150px;
+            margin-left: 20px;
+        }
+        .note{
+            grid-row: 3/4;
+            grid-column: 1/5;
+            margin-left: 20px;
+            height: 150px;
+            p{
+                font-size: 15px;
+            }
+        }
+        .move-1{
+            grid-row: 3/4;
+        }
+        .move-2{
+            grid-row: 4/5;
+        }
+        .list-move{
+            grid-row: 4/5;
+            grid-column: 1/5;
+            margin-left: 20px;
+            height: 150px;
+            width: 250px;
+            .h2-quin{
+                font-size: 15px;
+            }
+        }
+    }
 }
