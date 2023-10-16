@@ -358,10 +358,15 @@
         flex-direction: column;
         .logo-img{
             @include flex-5p(center, center);
-            width: 100%;
-            .logo-register{
-                @include size(100px, 150px);
+            img{
+                @include size(20px, 150px);
             }
+            // width: 100%;
+            // .logo-register{
+            //     img{
+                    
+            //     }
+            // }
         }
         .register{
             @include size(90%, 450px);
