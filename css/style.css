@@ -640,7 +640,7 @@ header .nav-wrapper nav .navBar li a:active {
   align-items: center;
   gap: none;
   background-color: #D9D9D9;
-  height: 285px;
+  height: 300px;
   border-radius: 20px;
   grid-column: 2/5;
   grid-row: 3/7;
@@ -650,6 +650,7 @@ header .nav-wrapper nav .navBar li a:active {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: "Preahvihear", sans-serif;
+  text-align: center;
 }
 .general-form .section3 form {
   display: flex;
@@ -658,7 +659,6 @@ header .nav-wrapper nav .navBar li a:active {
 }
 .general-form .section3 form fieldset {
   border: none;
-  border-bottom: 3px solid #FFFFFF;
 }
 .general-form .section3 form fieldset .label-1 {
   height: 50px;
@@ -1154,6 +1154,306 @@ header .nav-wrapper nav .navBar li a:active {
   .container-blog .move-2 {
     grid-row: 9/10;
   }
+  .h1-conteiner-dimension {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .conteiner-catalogo {
+    height: 700px;
+  }
+  .conteiner-catalogo .card-size-blog {
+    width: 80px;
+    height: 10px;
+  }
+  .conteiner-catalogo .card-size-blog img {
+    width: 100%;
+    height: 100px;
+  }
+  .conteiner-catalogo .card-size-blog .h2-quin {
+    height: 20px;
+    font-size: 20px;
+    font-size: 10px;
+  }
+  .conteiner-catalogo .quincena1 {
+    grid-column: 2/6;
+    box-shadow: none;
+  }
+  .conteiner-catalogo .quincena2 {
+    grid-column: 10/11;
+    box-shadow: none;
+  }
+  .conteiner-catalogo .quincena3 {
+    grid-column: 2/6;
+    box-shadow: none;
+  }
+  .conteiner-catalogo .quincena4 {
+    grid-column: 10/11;
+    box-shadow: none;
+  }
+  .conteiner-catalogo .quincena5 {
+    grid-column: 2/6;
+    box-shadow: none;
+  }
+  .conteiner-catalogo .quincena6 {
+    grid-column: 10/11;
+    box-shadow: none;
+  }
+  .conteiner-catalogo .move-1 {
+    grid-row: 5/6;
+  }
+  .conteiner-catalogo .move-2 {
+    grid-row: 8/9;
+  }
+  .conteiner-catalogo .image {
+    display: none;
+  }
+  .change-product .quincena1 {
+    grid-column: 2/6;
+    box-shadow: none;
+  }
+  .change-product .quincena2 {
+    grid-column: 7/8;
+    box-shadow: none;
+  }
+  .change-product .quincena3 {
+    grid-column: 2/6;
+    box-shadow: none;
+  }
+  .change-product .quincena4 {
+    grid-column: 7/8;
+    box-shadow: none;
+  }
+  .change-product .quincena5 {
+    grid-column: 2/6;
+    box-shadow: none;
+  }
+  .change-product .quincena6 {
+    grid-column: 7/8;
+    box-shadow: none;
+  }
+  .change-product .move-1 {
+    grid-row: 5/6;
+  }
+  .change-product .move-2 {
+    grid-row: 8/9;
+  }
+  .change-product .image {
+    display: none;
+  }
+  .general-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 750px;
+  }
+  .general-form .section1 {
+    width: 350px;
+  }
+  .general-form .section1 h1 {
+    font-size: 30px;
+  }
+  .general-form .section2 {
+    width: 250px;
+    height: 150px;
+  }
+  .general-form .section2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .general-form .section3 {
+    width: 90%;
+    height: 450px;
+  }
+  .general-form .section3 form {
+    width: 100%;
+    height: 100%;
+  }
+  .general-form .section3 form fieldset {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 50px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .general-form .section3 form fieldset .label-1 {
+    grid-row: 1/2;
+    text-align: center;
+  }
+  .general-form .section3 form fieldset .time-date {
+    grid-row: 3/4;
+    text-align: center;
+  }
+  .general-form .section3 form fieldset .contact-date {
+    grid-row: 4/5;
+    text-align: center;
+  }
+  .general-form .section3 form fieldset .input-1 {
+    grid-row: 6/7;
+  }
+  .general-form .section3 label {
+    text-align: center;
+  }
+  .general-form .section4 {
+    display: none;
+  }
+  .register-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    margin-top: 2px;
+    flex-direction: column;
+  }
+  .register-general .logo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .register-general .logo-img .logo-register {
+    width: 100px;
+    height: 150px;
+  }
+  .register-general .register {
+    width: 90%;
+    height: 450px;
+    margin-bottom: 10px;
+  }
+  .register-general .register form {
+    width: 100%;
+    height: 100%;
+  }
+  .register-general .register form fieldset {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 50px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .register-general .register form fieldset .label-1 {
+    grid-row: 1/2;
+    text-align: center;
+  }
+  .register-general .register form fieldset .time-date {
+    grid-row: 3/4;
+    text-align: center;
+  }
+  .register-general .register form fieldset .password {
+    grid-row: 4/5;
+  }
+  .register-general .register form fieldset .contact-date {
+    grid-row: 5/6;
+    text-align: center;
+  }
+  .register-general .register form fieldset .input-1 {
+    grid-row: 7/8;
+  }
+  .register-general .register label {
+    text-align: center;
+  }
+  .register-general .section4 {
+    display: none;
+  }
+  .form-textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .form-textarea .section-large .large {
+    font-size: 20px;
+  }
+  .form-textarea .section2 {
+    width: 300px;
+    height: 200px;
+  }
+  .form-textarea .section2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .form-textarea .textarea-1 {
+    width: 90%;
+    height: 550px;
+    margin-bottom: 10px;
+  }
+  .form-textarea .textarea-1 form {
+    width: 100%;
+    height: 100%;
+  }
+  .form-textarea .textarea-1 form fieldset {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 50px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-textarea .textarea-1 form fieldset .label-1 {
+    grid-row: 1/2;
+    text-align: center;
+  }
+  .form-textarea .textarea-1 form fieldset .time-date {
+    grid-row: 3/4;
+    text-align: center;
+  }
+  .form-textarea .textarea-1 form fieldset .affair {
+    grid-row: 4/5;
+    margin-top: 40px;
+  }
+  .form-textarea .textarea-1 form fieldset .affair textarea {
+    width: 250px;
+    height: 100px;
+  }
+  .form-textarea .textarea-1 form fieldset .contact-date {
+    grid-row: 5/6;
+    text-align: center;
+  }
+  .form-textarea .textarea-1 form fieldset .input-1 {
+    grid-row: 8/9;
+  }
+  .form-textarea .textarea-1 label {
+    text-align: center;
+  }
+  .form-textarea .section4 {
+    display: none;
+  }
+  .form-personlized .personalized-1 {
+    height: 700px;
+  }
+  .form-personlized .personalized-1 .personalized {
+    grid-row: 7/8;
+  }
+  .form-personlized .personalized-1 .personalized textarea {
+    width: 250px;
+    height: 100px;
+  }
+  .log-in-box .main-label {
+    width: 100%;
+  }
+  .log-in-box .main-label form {
+    width: 90%;
+    height: 50%;
+  }
+  .log-in-box .main-label form .log-in-fieldset {
+    width: 100%;
+  }
+  .log-in-box .main-label form .log-in-fieldset .imge-log {
+    width: 150px;
+  }
+  .log-in-box .main-label form .log-in-fieldset .imge-log img {
+    width: 100%;
+    height: 200px;
+  }
 }
 /* Ipad mini 768 x1024 */
 @media only screen and (min-width: 570px) and (max-width: 1300px) {
@@ -1202,7 +1502,7 @@ header .nav-wrapper nav .navBar li a:active {
   }
   .conteinerDos .buttoms button {
     width: 150px;
-    height: 15px;
+    height: 40px;
   }
   .conteinerDos .buttoms button a {
     font-size: 15px;
@@ -1300,15 +1600,177 @@ header .nav-wrapper nav .navBar li a:active {
     height: 20px;
   }
   .container-blog .image {
-    grid-row: 3/7;
     grid-column: 1/5;
+    grid-row: 2/3;
+    height: 150px;
     margin-left: 20px;
   }
   .container-blog .move-1 {
-    grid-row: 6/7;
+    grid-row: 3/7;
   }
   .container-blog .move-2 {
     grid-row: 9/10;
+    margin-top: 120px;
+  }
+  .conteiner-catalogo {
+    height: 700px;
+  }
+  .conteiner-catalogo .card-size-blog {
+    width: 100px;
+    height: 10px;
+    box-shadow: none;
+  }
+  .conteiner-catalogo .card-size-blog img {
+    width: 100%;
+    height: 100px;
+  }
+  .conteiner-catalogo .card-size-blog .h2-quin {
+    font-size: 15px;
+    height: 20px;
+  }
+  .conteiner-catalogo .image-n {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    height: 150px;
+    margin-left: 20px;
+  }
+  .conteiner-catalogo .note {
+    grid-row: 3/4;
+    grid-column: 1/5;
+    margin-left: 20px;
+    height: 150px;
+  }
+  .conteiner-catalogo .note p {
+    font-size: 15px;
+  }
+  .conteiner-catalogo .move-1 {
+    grid-row: 3/4;
+  }
+  .conteiner-catalogo .move-2 {
+    grid-row: 4/5;
+  }
+  .conteiner-catalogo .list-move {
+    grid-row: 4/5;
+    grid-column: 1/5;
+    margin-left: 20px;
+    height: 150px;
+    width: 250px;
+  }
+  .conteiner-catalogo .list-move .h2-quin {
+    font-size: 15px;
+  }
+  .change-product {
+    height: 700px;
+  }
+  .change-product .card-size-blog {
+    width: 100px;
+    height: 10px;
+    box-shadow: none;
+  }
+  .change-product .card-size-blog img {
+    width: 100%;
+    height: 100px;
+  }
+  .change-product .card-size-blog .h2-quin {
+    font-size: 15px;
+    height: 20px;
+  }
+  .change-product .image-n {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    height: 150px;
+    margin-left: 20px;
+  }
+  .change-product .note {
+    grid-row: 3/4;
+    grid-column: 1/5;
+    margin-left: 20px;
+    height: 150px;
+  }
+  .change-product .note p {
+    font-size: 15px;
+  }
+  .change-product .move-1 {
+    grid-row: 3/4;
+  }
+  .change-product .move-2 {
+    grid-row: 4/5;
+  }
+  .change-product .list-move {
+    grid-row: 4/5;
+    grid-column: 1/5;
+    margin-left: 20px;
+    height: 150px;
+    width: 250px;
+  }
+  .change-product .list-move .h2-quin {
+    font-size: 15px;
+  }
+  .general-form .section3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+  }
+  .general-form .section3 form {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .general-form .section3 form fieldset .label-1 {
+    font-size: 15px;
+  }
+  .general-form .section3 form fieldset .label-1 input {
+    width: 120px;
+  }
+  .general-form .section3 form fieldset .time-date {
+    font-size: 15px;
+  }
+  .general-form .section3 form fieldset .time-date input {
+    width: 120px;
+  }
+  .general-form .section3 form fieldset .contact-date {
+    font-size: 15px;
+  }
+  .general-form .section3 form fieldset .contact-date input {
+    width: 120px;
+  }
+  .general-form .section3 form fieldset .affair textarea {
+    width: 90%;
+  }
+  .general-form .section3 form fieldset .personalized textarea {
+    width: 90%;
+  }
+  .general-form .section4 {
+    width: 250px;
+  }
+  .general-form .section4 h2, .general-form .section4 .conteinerDos .text p, .conteinerDos .text .general-form .section4 p {
+    font-size: 20px;
+  }
+  .general-form .section4 p {
+    font-size: 15px;
+  }
+  .register-general .register {
+    width: 90%;
+  }
+  .register-general .register form fieldset .label-1 {
+    font-size: 15px;
+  }
+  .register-general .register form fieldset .label-1 input {
+    width: 200px;
+  }
+  .register-general .register form fieldset .time-date {
+    font-size: 15px;
+  }
+  .register-general .register form fieldset .time-date input {
+    width: 200px;
+  }
+  .register-general .register form fieldset .contact-date {
+    font-size: 15px;
+  }
+  .register-general .register form fieldset .contact-date input {
+    width: 200px;
   }
 }
 
