@@ -1655,7 +1655,6 @@ header .nav-wrapper nav .navBar li a:active {
   }
   /* Blog*/
   .container-blog {
-    width: 100%;
     height: 800px;
   }
   .container-blog .card-size-blog {
@@ -1671,15 +1670,17 @@ header .nav-wrapper nav .navBar li a:active {
     height: 20px;
   }
   .container-blog .image {
-    grid-row: 3/7;
     grid-column: 1/5;
+    grid-row: 2/3;
+    height: 150px;
     margin-left: 20px;
   }
   .container-blog .move-1 {
-    grid-row: 8/9;
+    grid-row: 3/7;
   }
   .container-blog .move-2 {
-    grid-row: 8/9;
+    grid-row: 9/10;
+    margin-top: 120px;
   }
   .conteiner-catalogo {
     height: 700px;
