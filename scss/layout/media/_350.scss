@@ -103,9 +103,9 @@
         .cards-group-uno{
         display: flex;
         }
-    .cards-group-dos{
-        display: flex;
-    }
+        .cards-group-dos{
+            display: flex;
+        }
     }
     .conteinerCuatro{
         @include flex-5p(center, center);
@@ -358,15 +358,10 @@
         flex-direction: column;
         .logo-img{
             @include flex-5p(center, center);
-            img{
-                @include size(20px, 150px);
+            width: 100%;
+            .logo-register{
+                @include size(100px, 150px);
             }
-            // width: 100%;
-            // .logo-register{
-            //     img{
-                    
-            //     }
-            // }
         }
         .register{
             @include size(90%, 450px);
