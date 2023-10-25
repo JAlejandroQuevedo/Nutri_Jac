@@ -3,6 +3,8 @@ header{
     width: 100%;
     background-color: $bg-navBar-footer;
     @include box-4p(0px 20px, sticky, 0, 4);
+    animation: flipInX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
     .nav-wrapper{
         width: 100%;
         nav{

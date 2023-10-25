@@ -1,5 +1,5 @@
 //Menu hamburguesa
-@media(min-width:350px) and (max-width: 768px){
+@media(min-width:350px) and (max-width: 940px){
     header{
         .nav-wrapper{
             nav{
@@ -30,7 +30,7 @@
     }
 }
 /* Iphone SE 375 X 667 */
-@media only screen and (min-width: 350px) and (max-width:570px){
+@media only screen and (min-width: 350px) and (max-width:549px){
     .navBar{
         @include flex(row, wrap, none, none, none);
         li{
@@ -98,6 +98,9 @@
             } 
             p{
                 @include none;
+            }
+            button{
+                height: 20px;
             }
         }
         .cards-group-uno{

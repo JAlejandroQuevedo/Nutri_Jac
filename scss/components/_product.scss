@@ -1,3 +1,7 @@
+.center{
+    @include flex-5p(center, center);
+    flex-direction: column
+}
 .change-product{
     @include height-row-gap(1350px, 40px);
     h1{

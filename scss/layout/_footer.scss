@@ -1,6 +1,8 @@
 footer{
     @include size-radius (100%, 355px, none);
     @include flex (none, none, space-between, center, none);
+    animation: flipInX;
+    animation-duration: 2s;
     padding: 0px 20px;
     background-color: $bg-navBar-footer;
     .socialMedia{

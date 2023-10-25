@@ -1,5 +1,5 @@
 /* Ipad mini 768 x1024 */
-@media only screen and (min-width: 570px) and (max-width:1300px){
+@media only screen and (min-width: 550px) and (max-width:1300px){
     .navBar{
         @include flex(row, wrap, none, none, none);
         li{
@@ -68,6 +68,9 @@
             p{
                 display: none;
             }
+            button{
+                height: 20px;
+            }
         }
         .cards-group-uno{
             display: flex;
@@ -83,8 +86,14 @@
         }
     }
     .conteinerCinco{
+        @include flex-5p(center, center);
         .textCinco{
-            @include flex-5p(center, center);
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
         } 
         .imgCinco{
             img{
